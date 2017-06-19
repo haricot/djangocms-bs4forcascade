@@ -33,7 +33,7 @@ setup(
     description='Templates and templatetags to be used with djangoCMS and Bootstrap4.',
     author='Nicolas PASCAL',
     author_email='np.pascal@gmail.com',
-    url='https://github.com/jrief/djangocms-bootstrap4beta',
+    url='https://github.com/haricot/djangocms-bs4forcascade/',
     packages=find_packages(),
     install_requires=[],
     license='LICENSE-MIT',
