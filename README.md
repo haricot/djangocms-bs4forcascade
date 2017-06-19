@@ -18,7 +18,9 @@ CMSPLUGIN_CASCADE_PLUGINS = (
 'cms_bootstrap4.bootstrap',
 ..
 )
+```
 
+```
 CACSCADE_WORKAREA_GLOSSARY = {
     'breakpoints': ['xs', 'sm', 'md', 'lg','xl'],
             'container_max_widths': {
@@ -55,7 +57,9 @@ CMS_PLACEHOLDER_CONF = {
         'glossary': CACSCADE_WORKAREA_GLOSSARY,
     },
 }
+```
 
+```
 CMSPLUGIN_CASCADE = {
     'alien_plugins': ('TextPlugin', 'TextLinkPlugin',),
     'plugins_with_sharables': {
