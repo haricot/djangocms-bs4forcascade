@@ -41,7 +41,9 @@ CACSCADE_WORKAREA_GLOSSARY = {
                 'xl': ['(min-width: 1200px)'],
     },
 }
+```
 
+```
 CMS_PLACEHOLDER_CONF = {
     # this placeholder is used in templates/main.html, it shows how to
     # scaffold a djangoCMS page starting with an empty placeholder
