@@ -1,0 +1,24 @@
+{% load cms_tags %}
+
+{% spaceless %}
+{% with inline_styles=instance.inline_styles %}
+<div id="cmsplugin_{{ instance.id }}" class="{{ instance.css_classes }}"{% if inline_styles %} style="{{ inline_styles }}"{% endif %} role="tablist"  aria-multiselectable="true">
+	{% for card in instance.child_plugin_instances %}
+		{% with card_type=card.glossary.card_type heading_tag=card.glossary.heading_size|default:"div" card_title=card.glossary.card_title|safe %}
+	<div class="card {{ card_type }}">
+		<div class="card-header" role="tab" id="heading_{{ instance.id }}_{{ forloop.counter0 }}">
+			<{{ heading_tag }} class="mb-0">
+				<a data-toggle="collapse" {% if instance.glossary.close_others %}data-parent="#cmsplugin_{{ instance.id }}"{% endif %} href="#cmsplugin_{{ instance.id }}_{{ forloop.counter0 }}" aria-expanded="{% if forloop.first %}true|false{% endif %}"  aria-controls="cmsplugin_{{ instance.id }}">{{ card_title }}</a>
+			</{{ heading_tag }}>
+		</div>
+		<div id="cmsplugin_{{ instance.id }}_{{ forloop.counter0 }}" class="collapse {% if forloop.first and instance.glossary.first_is_open == "on" %} show {% endif %}" role="tabpanel"    aria-labelledby="heading_{{ instance.id }}_{{ forloop.counter0 }}">
+			<div class="card-block">
+			{% render_plugin card %}
+			</div>
+		</div>
+	</div>
+		{% endwith %}
+	{% endfor %}
+</div>
+{% endwith %}{% endspaceless %}
+ 

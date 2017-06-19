@@ -1,0 +1,13 @@
+{% load i18n menu_tags %}
+{% spaceless %}
+<div class="dropdown show"> 
+	<a href="#" class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >{% trans "Change Language" %} <b class="caret"></b></a>
+	<div class="dropdown-menu"  aria-labelledby="dropdownMenuLink2" role="menu">
+	{% for language in languages %}
+		<li{% ifequal current_language language.0 %} class="active"{% endifequal %}>
+			<a href="{% page_language_url language.0 %}" class="dropdown-title" item="{{ language.1 }}">{{ language.0 }}</a>
+		</li>
+	{% endfor %}
+	</div>
+</div>
+{% endspaceless %}

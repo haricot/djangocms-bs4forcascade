@@ -1,0 +1,9 @@
+{% load cms_tags %}
+{% with inline_styles=instance.inline_styles %}
+<h1>sssss {{row_css_class  }}</h1>
+<div class= {% if row_css_class=='xs' %} "col-{{instance.css_classes}}" {% else %}   "col-{{row_css_class}}-{{instance.css_classes}}" {% endif %}{% if inline_styles %} style="{{ inline_styles }}"{% endif %}>
+{% for plugin in instance.child_plugin_instances %}
+	{% render_plugin plugin %}
+{% endfor %}
+</div>
+{% endwith %}
