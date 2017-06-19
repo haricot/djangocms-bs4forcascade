@@ -1,0 +1,787 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-19 15:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: bootstrap/accordion.py:26
+msgid "Cards"
+msgstr ""
+
+#: bootstrap/accordion.py:27
+msgid "Number of cards for this card group."
+msgstr ""
+
+#: bootstrap/accordion.py:31
+msgid "Accordion"
+msgstr ""
+
+#: bootstrap/accordion.py:43
+msgid "Close others"
+msgstr ""
+
+#: bootstrap/accordion.py:45
+msgid "Open only one card at a time."
+msgstr ""
+
+#: bootstrap/accordion.py:50
+msgid "First card open"
+msgstr ""
+
+#: bootstrap/accordion.py:52
+msgid "Start with the first card open."
+msgstr ""
+
+#: bootstrap/accordion.py:59
+#, python-brace-format
+msgid "with {0} card"
+msgid_plural "with {0} cards"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: bootstrap/accordion.py:71
+msgid "Accordion Card"
+msgstr ""
+
+#: bootstrap/accordion.py:81 bootstrap/card.py:58
+msgid "Card type"
+msgstr ""
+
+#: bootstrap/accordion.py:82 bootstrap/card.py:59
+msgid "Display Card using this style."
+msgstr ""
+
+#: bootstrap/accordion.py:88 bootstrap/card.py:65
+msgid "Heading Size"
+msgstr ""
+
+#: bootstrap/accordion.py:93
+msgid "Card Title"
+msgstr ""
+
+#: bootstrap/buttons.py:23 bootstrap/card.py:25
+msgid "Primary"
+msgstr ""
+
+#: bootstrap/buttons.py:23
+msgid "Secondary"
+msgstr ""
+
+#: bootstrap/buttons.py:24 bootstrap/card.py:26
+msgid "Success"
+msgstr ""
+
+#: bootstrap/buttons.py:24 bootstrap/card.py:26
+msgid "Info"
+msgstr ""
+
+#: bootstrap/buttons.py:24 bootstrap/card.py:26
+msgid "Warning"
+msgstr ""
+
+#: bootstrap/buttons.py:25 bootstrap/card.py:27
+msgid "Danger"
+msgstr ""
+
+#: bootstrap/buttons.py:25
+msgid "Link"
+msgstr ""
+
+#: bootstrap/buttons.py:45
+msgid "Large"
+msgstr ""
+
+#: bootstrap/buttons.py:45 bootstrap/card.py:25 bootstrap/container.py:264
+msgid "Default"
+msgstr ""
+
+#: bootstrap/buttons.py:45
+msgid "Small"
+msgstr ""
+
+#: bootstrap/buttons.py:75
+msgid "Button Type"
+msgstr ""
+
+#: bootstrap/buttons.py:77
+msgid "Display Link using this Button Style"
+msgstr ""
+
+#: bootstrap/buttons.py:82
+msgid "Button Size"
+msgstr ""
+
+#: bootstrap/buttons.py:84
+msgid "Display Link using this Button Size"
+msgstr ""
+
+#: bootstrap/buttons.py:88
+msgid "Block level"
+msgstr ""
+
+#: bootstrap/buttons.py:88
+msgid "Disabled"
+msgstr ""
+
+#: bootstrap/buttons.py:89
+msgid "Button Options"
+msgstr ""
+
+#: bootstrap/buttons.py:94
+msgid "Do not float"
+msgstr ""
+
+#: bootstrap/buttons.py:94
+msgid "Float left"
+msgstr ""
+
+#: bootstrap/buttons.py:95
+msgid "Float right"
+msgstr ""
+
+#: bootstrap/buttons.py:96
+msgid "Quick Float"
+msgstr ""
+
+#: bootstrap/buttons.py:98
+msgid "Float the button to the left or right."
+msgstr ""
+
+#: bootstrap/buttons.py:102
+msgid "No Icon"
+msgstr ""
+
+#: bootstrap/buttons.py:102
+msgid "Icon placed left"
+msgstr ""
+
+#: bootstrap/buttons.py:103
+msgid "Icon placed right"
+msgstr ""
+
+#: bootstrap/buttons.py:104
+msgid "Icon alignment"
+msgstr ""
+
+#: bootstrap/buttons.py:106
+msgid "Add an Icon before or after the button content."
+msgstr ""
+
+#: bootstrap/buttons.py:111
+msgid "Font"
+msgstr ""
+
+#: bootstrap/buttons.py:116
+msgid "Select Symbol"
+msgstr ""
+
+#: bootstrap/buttons.py:139
+msgid "Button"
+msgstr ""
+
+#: bootstrap/buttons.py:160
+msgid "Empty"
+msgstr ""
+
+#: bootstrap/buttons.py:164
+msgid "Button Content"
+msgstr ""
+
+#: bootstrap/card.py:18
+msgid "normal"
+msgstr ""
+
+#: bootstrap/card.py:18
+msgid "Heading {}"
+msgstr ""
+
+#: bootstrap/card.py:39
+msgid "Content"
+msgstr ""
+
+#: bootstrap/card.py:47
+msgid "Card"
+msgstr ""
+
+#: bootstrap/card.py:70
+msgid "Card Heading"
+msgstr ""
+
+#: bootstrap/card.py:75
+msgid "Card Footer"
+msgstr ""
+
+#: bootstrap/carousel.py:31
+msgid "Slides"
+msgstr ""
+
+#: bootstrap/carousel.py:32
+msgid "Number of slides for this carousel."
+msgstr ""
+
+#: bootstrap/carousel.py:37
+msgid "Carousel"
+msgstr ""
+
+#: bootstrap/carousel.py:46
+msgid "Animate"
+msgstr ""
+
+#: bootstrap/carousel.py:46
+msgid "Pause"
+msgstr ""
+
+#: bootstrap/carousel.py:46
+msgid "Wrap"
+msgstr ""
+
+#: bootstrap/carousel.py:50
+msgid "Interval"
+msgstr ""
+
+#: bootstrap/carousel.py:52
+msgid "Change slide after this number of seconds."
+msgstr ""
+
+#: bootstrap/carousel.py:57
+msgid "Options"
+msgstr ""
+
+#: bootstrap/carousel.py:59
+msgid "Adjust interval for the carousel."
+msgstr ""
+
+#: bootstrap/carousel.py:65
+msgid "Carousel heights"
+msgstr ""
+
+#: bootstrap/carousel.py:68
+msgid "Heights of Carousel in pixels for distinct Bootstrap's breakpoints."
+msgstr ""
+
+#: bootstrap/carousel.py:73 bootstrap/gallery.py:142 bootstrap/image.py:117
+#: bootstrap/jumbotron.py:116 bootstrap/picture.py:54
+msgid "Resize Options"
+msgstr ""
+
+#: bootstrap/carousel.py:74 bootstrap/gallery.py:143 bootstrap/image.py:118
+#: bootstrap/jumbotron.py:119 bootstrap/picture.py:55
+msgid "Options to use when resizing the image."
+msgstr ""
+
+#: bootstrap/carousel.py:86
+#, python-brace-format
+msgid "with {0} slide"
+msgid_plural "with {0} slides"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bootstrap/carousel.py:128
+msgid "Slide"
+msgstr ""
+
+#: bootstrap/carousel.py:154 bootstrap/carousel.py:196
+msgid "Empty Slide"
+msgstr ""
+
+#: bootstrap/carousel.py:158
+msgid "Slide_Image"
+msgstr ""
+
+#: bootstrap/container.py:42
+msgid "At least one breakpoint must be selected."
+msgstr ""
+
+#: bootstrap/container.py:47
+msgid "Container"
+msgstr ""
+
+#: bootstrap/container.py:56 bootstrap/jumbotron.py:101
+msgid "Available Breakpoints"
+msgstr ""
+
+#: bootstrap/container.py:58 bootstrap/jumbotron.py:104
+msgid "Supported display widths for Bootstrap's grid system."
+msgstr ""
+
+#: bootstrap/container.py:63
+msgid "Fluid Container"
+msgstr ""
+
+#: bootstrap/container.py:64
+msgid "Changing your outermost '.container' to '.container-fluid'."
+msgstr ""
+
+#: bootstrap/container.py:74
+#, python-brace-format
+msgid "{0}for {1}"
+msgstr ""
+
+#: bootstrap/container.py:104
+#, python-brace-format
+msgid "{0} column"
+msgid_plural "{0} columns"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bootstrap/container.py:105
+msgid "Columns"
+msgstr ""
+
+#: bootstrap/container.py:106
+msgid "Number of columns to be created with this row."
+msgstr ""
+
+#: bootstrap/container.py:110
+msgid "Row"
+msgstr ""
+
+#: bootstrap/container.py:120
+#, python-brace-format
+msgid "with {0} column"
+msgid_plural "with {0} columns"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bootstrap/container.py:144
+msgid "Column"
+msgstr ""
+
+#: bootstrap/container.py:167
+msgid "{} unit"
+msgid_plural "{} units"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bootstrap/container.py:186 bootstrap/container.py:206
+msgid "Column width for {}"
+msgstr ""
+
+#: bootstrap/container.py:188
+msgid "Number of column units for devices narrower than {} pixels."
+msgstr ""
+
+#: bootstrap/container.py:189
+msgid "Number of column units for devices wider than {} pixels."
+msgstr ""
+
+#: bootstrap/container.py:190
+msgid "Number of column units for all devices."
+msgstr ""
+
+#: bootstrap/container.py:201 bootstrap/container.py:204
+#: bootstrap/container.py:225
+msgid "Inherit from above"
+msgstr ""
+
+#: bootstrap/container.py:208
+msgid "Override column units for devices narrower than {} pixels."
+msgstr ""
+
+#: bootstrap/container.py:209
+msgid "Override column units for devices wider than {} pixels."
+msgstr ""
+
+#: bootstrap/container.py:210
+msgid "Override column units for all devices."
+msgstr ""
+
+#: bootstrap/container.py:222
+msgid "No offset"
+msgstr ""
+
+#: bootstrap/container.py:235
+msgid "Offset for {}"
+msgstr ""
+
+#: bootstrap/container.py:237
+msgid "Number of offset units for devices narrower than {} pixels."
+msgstr ""
+
+#: bootstrap/container.py:238
+msgid "Number of offset units for devices wider than {} pixels."
+msgstr ""
+
+#: bootstrap/container.py:239
+msgid "Number of offset units for all devices."
+msgstr ""
+
+#: bootstrap/container.py:248
+msgid "No reordering"
+msgstr ""
+
+#: bootstrap/container.py:249
+msgid "Push {}"
+msgstr ""
+
+#: bootstrap/container.py:250
+msgid "Pull {}"
+msgstr ""
+
+#: bootstrap/container.py:251
+#, python-brace-format
+msgid "Column ordering for {0}"
+msgstr ""
+
+#: bootstrap/container.py:253
+msgid "Column ordering for devices narrower than {} pixels."
+msgstr ""
+
+#: bootstrap/container.py:254
+msgid "Column ordering for devices wider than {} pixels."
+msgstr ""
+
+#: bootstrap/container.py:255
+msgid "Column ordering for all devices."
+msgstr ""
+
+#: bootstrap/container.py:264
+msgid "Visible"
+msgstr ""
+
+#: bootstrap/container.py:264
+msgid "Hidden"
+msgstr ""
+
+#: bootstrap/container.py:265
+msgid "Responsive utilities for {}"
+msgstr ""
+
+#: bootstrap/container.py:267
+msgid ""
+"Utility classes for showing and hiding content by devices narrower than {} "
+"pixels."
+msgstr ""
+
+#: bootstrap/container.py:268
+msgid ""
+"Utility classes for showing and hiding content by devices wider than {} "
+"pixels."
+msgstr ""
+
+#: bootstrap/container.py:269
+msgid "Utility classes for showing and hiding content for all devices."
+msgstr ""
+
+#: bootstrap/container.py:339
+#, python-brace-format
+msgid "widths: {0} units"
+msgstr ""
+
+#: bootstrap/container.py:342
+#, python-brace-format
+msgid "default width: {0} unit"
+msgid_plural "default width: {0} units"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bootstrap/container.py:344
+msgid "unknown width"
+msgstr ""
+
+#: bootstrap/gallery.py:32 bootstrap/image.py:49 bootstrap/image.py:71
+#: bootstrap/image.py:127 bootstrap/picture.py:64
+msgid "Image"
+msgstr ""
+
+#: bootstrap/gallery.py:33 bootstrap/image.py:59
+msgid "Image Title"
+msgstr ""
+
+#: bootstrap/gallery.py:35 bootstrap/image.py:60
+msgid "Caption text added to the 'title' attribute of the <img> element."
+msgstr ""
+
+#: bootstrap/gallery.py:36 bootstrap/image.py:65
+msgid "Alternative Description"
+msgstr ""
+
+#: bootstrap/gallery.py:38 bootstrap/image.py:66
+msgid ""
+"Textual description of the image added to the 'alt' tag of the <img> element."
+msgstr ""
+
+#: bootstrap/gallery.py:85
+msgid "Gallery"
+msgstr ""
+
+#: bootstrap/gallery.py:87
+msgid ""
+"<p>Add images, which make up a set to be used as gallery.</p><p>All "
+"thumbnails for these images are resized to the same widths and heights.</p>"
+msgstr ""
+
+#: bootstrap/gallery.py:98 bootstrap/image.py:84
+msgid "Responsive"
+msgstr ""
+
+#: bootstrap/gallery.py:99 bootstrap/image.py:86 bootstrap/picture.py:34
+msgid "Upscale image"
+msgstr ""
+
+#: bootstrap/gallery.py:99 bootstrap/image.py:86 bootstrap/picture.py:34
+msgid "Crop image"
+msgstr ""
+
+#: bootstrap/gallery.py:100 bootstrap/image.py:87 bootstrap/picture.py:35
+msgid "With subject location"
+msgstr ""
+
+#: bootstrap/gallery.py:101 bootstrap/image.py:88 bootstrap/picture.py:36
+msgid "Optimized for Retina"
+msgstr ""
+
+#: bootstrap/gallery.py:105
+msgid "Image Responsiveness"
+msgstr ""
+
+#: bootstrap/gallery.py:111 bootstrap/image.py:98
+msgid "Responsive Image Width"
+msgstr ""
+
+#: bootstrap/gallery.py:113 bootstrap/image.py:100
+msgid "Set the image width in percent relative to containing element."
+msgstr ""
+
+#: bootstrap/gallery.py:118 bootstrap/image.py:105
+msgid "Fixed Image Width"
+msgstr ""
+
+#: bootstrap/gallery.py:119 bootstrap/image.py:106
+msgid "Set a fixed image width in pixels."
+msgstr ""
+
+#: bootstrap/gallery.py:124 bootstrap/image.py:111
+msgid "Adapt Image Height"
+msgstr ""
+
+#: bootstrap/gallery.py:125 bootstrap/image.py:112
+msgid "Set a fixed height in pixels, or percent relative to the image width."
+msgstr ""
+
+#: bootstrap/gallery.py:130
+msgid "Thumbnail Width"
+msgstr ""
+
+#: bootstrap/gallery.py:131
+msgid "Set a fixed thumbnail width in pixels."
+msgstr ""
+
+#: bootstrap/gallery.py:136
+msgid "Thumbnail Height"
+msgstr ""
+
+#: bootstrap/gallery.py:137
+msgid ""
+"Set a fixed height in pixels, or percent relative to the thumbnail width."
+msgstr ""
+
+#: bootstrap/gallery.py:194
+#, python-brace-format
+msgid "with {0} image"
+msgid_plural "with {0} images"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bootstrap/image.py:23
+msgid "No Link"
+msgstr ""
+
+#: bootstrap/image.py:84
+msgid "Rounded"
+msgstr ""
+
+#: bootstrap/image.py:85
+msgid "Circle"
+msgstr ""
+
+#: bootstrap/image.py:85
+msgid "Thumbnail"
+msgstr ""
+
+#: bootstrap/image.py:92
+msgid "Image Shapes"
+msgstr ""
+
+#: bootstrap/image.py:159
+msgid "No Image"
+msgstr ""
+
+#: bootstrap/jumbotron.py:75
+msgid "You must at least set a background width."
+msgstr ""
+
+#: bootstrap/jumbotron.py:80
+msgid "Jumbotron"
+msgstr ""
+
+#: bootstrap/jumbotron.py:109 bootstrap/picture.py:40
+msgid "Adapt Picture Heights"
+msgstr ""
+
+#: bootstrap/jumbotron.py:112 bootstrap/picture.py:42
+msgid ""
+"Heights of picture in percent or pixels for distinct Bootstrap's breakpoints."
+msgstr ""
+
+#: bootstrap/jumbotron.py:125
+msgid "Background color"
+msgstr ""
+
+#: bootstrap/jumbotron.py:131
+msgid "This property specifies how an image repeates."
+msgstr ""
+
+#: bootstrap/jumbotron.py:137
+msgid ""
+"This property specifies how to move the background relative to the viewport."
+msgstr ""
+
+#: bootstrap/jumbotron.py:143
+msgid "This property moves a background image vertically within its container."
+msgstr ""
+
+#: bootstrap/jumbotron.py:149
+msgid ""
+"This property moves a background image horizontally within its container."
+msgstr ""
+
+#: bootstrap/jumbotron.py:155
+msgid "Background size"
+msgstr ""
+
+#: bootstrap/jumbotron.py:156
+msgid "This property specifies how an image is sized."
+msgstr ""
+
+#: bootstrap/jumbotron.py:162
+msgid "Background width and height"
+msgstr ""
+
+#: bootstrap/jumbotron.py:163
+msgid "This property specifies the width and height of a background image."
+msgstr ""
+
+#: bootstrap/jumbotron.py:205
+msgid "Without background image"
+msgstr ""
+
+#: bootstrap/picture.py:20
+msgid "Picture"
+msgstr ""
+
+#: bootstrap/picture.py:47
+msgid "Adapt Picture Zoom"
+msgstr ""
+
+#: bootstrap/picture.py:49
+msgid ""
+"Magnification of picture in percent for distinct Bootstrap's breakpoints."
+msgstr ""
+
+#: bootstrap/picture.py:97
+msgid "No Picture"
+msgstr ""
+
+#: bootstrap/secondary_menu.py:17
+msgid "Secondary Menu"
+msgstr ""
+
+#: bootstrap/secondary_menu.py:26
+msgid "CMS Page Id"
+msgstr ""
+
+#: bootstrap/secondary_menu.py:27
+msgid "Select a CMS page with a given unique Id (in advanced settings)."
+msgstr ""
+
+#: bootstrap/settings.py:21
+msgid "mobile phones"
+msgstr ""
+
+#: bootstrap/settings.py:22
+msgid "phablets"
+msgstr ""
+
+#: bootstrap/settings.py:23
+msgid "tablets"
+msgstr ""
+
+#: bootstrap/settings.py:24
+msgid "laptops"
+msgstr ""
+
+#: bootstrap/settings.py:25
+msgid "large desktops"
+msgstr ""
+
+#: bootstrap/settings.py:37
+msgid "default"
+msgstr ""
+
+#: bootstrap/settings.py:38
+msgid "unstyled"
+msgstr ""
+
+#: bootstrap/tabs.py:21
+msgid "Tabs"
+msgstr ""
+
+#: bootstrap/tabs.py:22
+msgid "Number of tabs."
+msgstr ""
+
+#: bootstrap/tabs.py:26
+msgid "Tab Set"
+msgstr ""
+
+#: bootstrap/tabs.py:36
+msgid "Justified tabs"
+msgstr ""
+
+#: bootstrap/tabs.py:43
+msgid "with {} tab"
+msgid_plural "with {} tabs"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: bootstrap/tabs.py:55
+msgid "Tab Pane"
+msgstr ""
+
+#: bootstrap/tabs.py:63
+msgid "Tab Title"
+msgstr ""
+
+#: templates/bootstrap/components/paginator.html:12
+msgid "current"
+msgstr ""
+
+#: templates/bootstrap/includes/language-chooser.html:4
+msgid "Change Language"
+msgstr ""
+
+#: templates/bootstrap/includes/nav-navbar.html:9
+msgid "Toggle navigation"
+msgstr ""
+
+#: templates/bootstrap/includes/nav-secondary.html:8
+msgid "Customer Account"
+msgstr ""

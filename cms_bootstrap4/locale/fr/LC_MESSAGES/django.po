@@ -1,0 +1,1394 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Nicolas P <np>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-19 15:23+0200\n"
+"PO-Revision-Date: 2017-06-19 15:40+0200\n"
+"Last-Translator: Nicolas P <np>\n"
+"Language-Team: français <>\n"
+"Language: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#: bootstrap/accordion.py:26
+msgid "Cards"
+msgstr "Cartes"
+
+#: bootstrap/accordion.py:27
+#| msgid "Number of panels for this panel group."
+msgid "Number of cards for this card group."
+msgstr "Nombre de cartes pour ce groupe de panneaux."
+
+#: bootstrap/accordion.py:31
+msgid "Accordion"
+msgstr "Accordéon"
+
+#: bootstrap/accordion.py:43
+msgid "Close others"
+msgstr "Fermer les autres"
+
+#: bootstrap/accordion.py:45
+#| msgid "Open only one panel at a time."
+msgid "Open only one card at a time."
+msgstr "Ouvrir une seul carte à la fois."
+
+#: bootstrap/accordion.py:50
+#| msgid "First panel open"
+msgid "First card open"
+msgstr "Première carte ouvert"
+
+#: bootstrap/accordion.py:52
+#| msgid "Start with the first panel open."
+msgid "Start with the first card open."
+msgstr "Commencez par ouvrir la premiere carte."
+
+#: bootstrap/accordion.py:59
+#, python-brace-format
+#| msgid "with {0} panel"
+#| msgid_plural "with {0} panels"
+msgid "with {0} card"
+msgid_plural "with {0} cards"
+msgstr[0] "Avec la carte {}"
+msgstr[1] "Avec {} cartes"
+
+#: bootstrap/accordion.py:71
+#| msgid "Accordion"
+msgid "Accordion Card"
+msgstr "Accordéon carte"
+
+#: bootstrap/accordion.py:81 bootstrap/card.py:58
+#| msgid "Panel type"
+msgid "Card type"
+msgstr "Type de carte"
+
+#: bootstrap/accordion.py:82 bootstrap/card.py:59
+#| msgid "Display Panel using this style."
+msgid "Display Card using this style."
+msgstr "Carte d'affichage utilisant ce style."
+
+#: bootstrap/accordion.py:88 bootstrap/card.py:65
+msgid "Heading Size"
+msgstr "Taille de la rubrique"
+
+#: bootstrap/accordion.py:93
+#| msgid "Title"
+msgid "Card Title"
+msgstr "Titre de carte"
+
+#: bootstrap/buttons.py:23 bootstrap/card.py:25
+msgid "Primary"
+msgstr "Primaire"
+
+#: bootstrap/buttons.py:23
+#| msgid "Secondary Menu"
+msgid "Secondary"
+msgstr "Secondaire"
+
+#: bootstrap/buttons.py:24 bootstrap/card.py:26
+msgid "Success"
+msgstr "Succès"
+
+#: bootstrap/buttons.py:24 bootstrap/card.py:26
+msgid "Info"
+msgstr "Info"
+
+#: bootstrap/buttons.py:24 bootstrap/card.py:26
+msgid "Warning"
+msgstr "Attention"
+
+#: bootstrap/buttons.py:25 bootstrap/card.py:27
+msgid "Danger"
+msgstr "Danger"
+
+#: bootstrap/buttons.py:25
+msgid "Link"
+msgstr "Lien"
+
+#: bootstrap/buttons.py:45
+msgid "Large"
+msgstr "Grand"
+
+#: bootstrap/buttons.py:45 bootstrap/card.py:25 bootstrap/container.py:264
+msgid "Default"
+msgstr "Par défaut"
+
+#: bootstrap/buttons.py:45
+msgid "Small"
+msgstr "Petit"
+
+#: bootstrap/buttons.py:75
+msgid "Button Type"
+msgstr "Type de bouton"
+
+#: bootstrap/buttons.py:77
+msgid "Display Link using this Button Style"
+msgstr "Afficher le lien en utilisant ce style de bouton"
+
+#: bootstrap/buttons.py:82
+msgid "Button Size"
+msgstr "Taille du bouton"
+
+#: bootstrap/buttons.py:84
+msgid "Display Link using this Button Size"
+msgstr "Afficher le lien à l'aide de cette taille de bouton"
+
+#: bootstrap/buttons.py:88
+msgid "Block level"
+msgstr "Niveau de blocage"
+
+#: bootstrap/buttons.py:88
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: bootstrap/buttons.py:89
+msgid "Button Options"
+msgstr "Options des boutons"
+
+#: bootstrap/buttons.py:94
+msgid "Do not float"
+msgstr "Ne pas flotter"
+
+#: bootstrap/buttons.py:94
+#| msgid "Pull left"
+msgid "Float left"
+msgstr "Tire vers la gauche"
+
+#: bootstrap/buttons.py:95
+#| msgid "Pull right"
+msgid "Float right"
+msgstr "Tire à droite"
+
+#: bootstrap/buttons.py:96
+msgid "Quick Float"
+msgstr "Flot rapide"
+
+#: bootstrap/buttons.py:98
+msgid "Float the button to the left or right."
+msgstr "Mettre en place le bouton à droite ou à gauche."
+
+#: bootstrap/buttons.py:102
+msgid "No Icon"
+msgstr "Pas d'icône"
+
+#: bootstrap/buttons.py:102
+msgid "Icon placed left"
+msgstr "Icône placé à gauche"
+
+#: bootstrap/buttons.py:103
+msgid "Icon placed right"
+msgstr "Icône placée à droite"
+
+#: bootstrap/buttons.py:104
+msgid "Icon alignment"
+msgstr "Alignement des icônes"
+
+#: bootstrap/buttons.py:106
+#| msgid "Append a Glyphicon after the content."
+msgid "Add an Icon before or after the button content."
+msgstr "Ajouter une icône avant ou après le contenu du bouton."
+
+#: bootstrap/buttons.py:111
+msgid "Font"
+msgstr "Fonte"
+
+#: bootstrap/buttons.py:116
+#| msgid "Select CSS"
+msgid "Select Symbol"
+msgstr "Sélectionnez le symbole"
+
+#: bootstrap/buttons.py:139
+msgid "Button"
+msgstr "Bouton"
+
+#: bootstrap/buttons.py:160
+msgid "Empty"
+msgstr "Vide"
+
+#: bootstrap/buttons.py:164
+msgid "Button Content"
+msgstr "Contenu du bouton"
+
+#: bootstrap/card.py:18
+msgid "normal"
+msgstr "normal"
+
+#: bootstrap/card.py:18
+msgid "Heading {}"
+msgstr "Titre {}"
+
+#: bootstrap/card.py:39
+msgid "Content"
+msgstr "Contenu"
+
+#: bootstrap/card.py:47
+msgid "Card"
+msgstr "Carte"
+
+#: bootstrap/card.py:70
+#| msgid "Heading {}"
+msgid "Card Heading"
+msgstr "Titre de la carte"
+
+#: bootstrap/card.py:75
+#| msgid "Panel Footer"
+msgid "Card Footer"
+msgstr "Carte bas de page"
+
+#: bootstrap/carousel.py:31
+msgid "Slides"
+msgstr "Slides"
+
+#: bootstrap/carousel.py:32
+msgid "Number of slides for this carousel."
+msgstr "Nombre de slides pour ce carrousel."
+
+#: bootstrap/carousel.py:37
+msgid "Carousel"
+msgstr "Carrousel"
+
+#: bootstrap/carousel.py:46
+msgid "Animate"
+msgstr "Animer"
+
+#: bootstrap/carousel.py:46
+msgid "Pause"
+msgstr "Pause"
+
+#: bootstrap/carousel.py:46
+msgid "Wrap"
+msgstr "Emballage"
+
+#: bootstrap/carousel.py:50
+msgid "Interval"
+msgstr "Intervalle"
+
+#: bootstrap/carousel.py:52
+msgid "Change slide after this number of seconds."
+msgstr "Changer le slide après ce nombre de secondes."
+
+#: bootstrap/carousel.py:57
+msgid "Options"
+msgstr "Options"
+
+#: bootstrap/carousel.py:59
+msgid "Adjust interval for the carousel."
+msgstr "Ajuster l'intervalle pour le carrousel."
+
+#: bootstrap/carousel.py:65
+msgid "Carousel heights"
+msgstr "Hauteur du carrousel"
+
+#: bootstrap/carousel.py:68
+msgid "Heights of Carousel in pixels for distinct Bootstrap's breakpoints."
+msgstr ""
+"Hauteurs du carrousel en pixels pour les points d'arrêt distincts de "
+"Bootstrap."
+
+#: bootstrap/carousel.py:73 bootstrap/gallery.py:142 bootstrap/image.py:117
+#: bootstrap/jumbotron.py:116 bootstrap/picture.py:54
+msgid "Resize Options"
+msgstr "Options de redimensionnement"
+
+#: bootstrap/carousel.py:74 bootstrap/gallery.py:143 bootstrap/image.py:118
+#: bootstrap/jumbotron.py:119 bootstrap/picture.py:55
+msgid "Options to use when resizing the image."
+msgstr "Options à utiliser lors du redimensionnement de l'image."
+
+#: bootstrap/carousel.py:86
+#, python-brace-format
+msgid "with {0} slide"
+msgid_plural "with {0} slides"
+msgstr[0] "Avec {0} Slide"
+msgstr[1] "Avec {0} Slides"
+
+#: bootstrap/carousel.py:128
+msgid "Slide"
+msgstr "Slide"
+
+#: bootstrap/carousel.py:154 bootstrap/carousel.py:196
+msgid "Empty Slide"
+msgstr "Slide Vide"
+
+#: bootstrap/carousel.py:158
+#| msgid "Slide"
+msgid "Slide_Image"
+msgstr "Slide"
+
+#: bootstrap/container.py:42
+msgid "At least one breakpoint must be selected."
+msgstr "Au moins un point d'arrêt doit être sélectionné."
+
+#: bootstrap/container.py:47
+msgid "Container"
+msgstr "Conteneur"
+
+#: bootstrap/container.py:56 bootstrap/jumbotron.py:101
+msgid "Available Breakpoints"
+msgstr "Points d'arrêt disponibles"
+
+#: bootstrap/container.py:58 bootstrap/jumbotron.py:104
+msgid "Supported display widths for Bootstrap's grid system."
+msgstr ""
+"Largeurs d'affichage prises en charge pour le système de grille de Bootstrap."
+
+#: bootstrap/container.py:63
+msgid "Fluid Container"
+msgstr "Fluid Container"
+
+#: bootstrap/container.py:64
+msgid "Changing your outermost '.container' to '.container-fluid'."
+msgstr "Modification de votre \".container\" externe vers '.container-fluid'."
+
+#: bootstrap/container.py:74
+#, python-brace-format
+msgid "{0}for {1}"
+msgstr "{0}pour {1}"
+
+#: bootstrap/container.py:104
+#, python-brace-format
+msgid "{0} column"
+msgid_plural "{0} columns"
+msgstr[0] "{0} colonne"
+msgstr[1] "{0} colonnes"
+
+#: bootstrap/container.py:105
+msgid "Columns"
+msgstr "Colonnes"
+
+#: bootstrap/container.py:106
+msgid "Number of columns to be created with this row."
+msgstr "Nombre de colonnes à créer avec cette ligne."
+
+#: bootstrap/container.py:110
+msgid "Row"
+msgstr "Rangée"
+
+#: bootstrap/container.py:120
+#, python-brace-format
+msgid "with {0} column"
+msgid_plural "with {0} columns"
+msgstr[0] "Avec {0} colonne"
+msgstr[1] "Avec {0} colonnes"
+
+#: bootstrap/container.py:144
+msgid "Column"
+msgstr "Colonne"
+
+#: bootstrap/container.py:167
+msgid "{} unit"
+msgid_plural "{} units"
+msgstr[0] "{} unité"
+msgstr[1] "{} Unités"
+
+#: bootstrap/container.py:186 bootstrap/container.py:206
+msgid "Column width for {}"
+msgstr "Largeur de colonne pour {}"
+
+#: bootstrap/container.py:188
+msgid "Number of column units for devices narrower than {} pixels."
+msgstr "Nombre d'unités de colonne pour appareils plus étroits que {} pixels."
+
+#: bootstrap/container.py:189
+msgid "Number of column units for devices wider than {} pixels."
+msgstr ""
+"Nombre d'unités de colonne pour les périphériques plus larges que {} pixels."
+
+#: bootstrap/container.py:190
+msgid "Number of column units for all devices."
+msgstr "Nombre d'unités de colonne pour tous les appareils."
+
+#: bootstrap/container.py:201 bootstrap/container.py:204
+#: bootstrap/container.py:225
+msgid "Inherit from above"
+msgstr "Hériter d'en haut"
+
+#: bootstrap/container.py:208
+msgid "Override column units for devices narrower than {} pixels."
+msgstr ""
+"Annuler les unités de colonne pour les périphériques plus étroits que {} "
+"pixels."
+
+#: bootstrap/container.py:209
+msgid "Override column units for devices wider than {} pixels."
+msgstr ""
+"Annuler les unités de colonne pour des périphériques plus larges que {} "
+"pixels."
+
+#: bootstrap/container.py:210
+msgid "Override column units for all devices."
+msgstr "Annuler les unités de colonne pour tous les périphériques."
+
+#: bootstrap/container.py:222
+msgid "No offset"
+msgstr "Pas décalage"
+
+#: bootstrap/container.py:235
+msgid "Offset for {}"
+msgstr "Décalage pour {}"
+
+#: bootstrap/container.py:237
+msgid "Number of offset units for devices narrower than {} pixels."
+msgstr ""
+"Nombre d'unités de décalage pour les appareils plus petits que {} pixels."
+
+#: bootstrap/container.py:238
+msgid "Number of offset units for devices wider than {} pixels."
+msgstr "Nombre d'unités de décalage pour les appareils que résister {} pixels."
+
+#: bootstrap/container.py:239
+msgid "Number of offset units for all devices."
+msgstr "Nombre d'unités de décalage pour tous les appareils."
+
+#: bootstrap/container.py:248
+msgid "No reordering"
+msgstr "Pas de réorganisation"
+
+#: bootstrap/container.py:249
+msgid "Push {}"
+msgstr "presser {}"
+
+#: bootstrap/container.py:250
+msgid "Pull {}"
+msgstr "Intégration {}"
+
+#: bootstrap/container.py:251
+#, python-brace-format
+msgid "Column ordering for {0}"
+msgstr "Ordre de colonne pour {0}"
+
+#: bootstrap/container.py:253
+msgid "Column ordering for devices narrower than {} pixels."
+msgstr "Ordre des colonnes pour les périphériques plus étroits que {} pixels."
+
+#: bootstrap/container.py:254
+msgid "Column ordering for devices wider than {} pixels."
+msgstr "Ordre des colonnes pour les périphériques plus larges que {} pixels."
+
+#: bootstrap/container.py:255
+msgid "Column ordering for all devices."
+msgstr "Ordre des colonnes pour tous les périphériques."
+
+#: bootstrap/container.py:264
+msgid "Visible"
+msgstr "Visible"
+
+#: bootstrap/container.py:264
+msgid "Hidden"
+msgstr "Caché"
+
+#: bootstrap/container.py:265
+msgid "Responsive utilities for {}"
+msgstr "Responsive utilitaires pour {}"
+
+#: bootstrap/container.py:267
+msgid ""
+"Utility classes for showing and hiding content by devices narrower than {} "
+"pixels."
+msgstr ""
+"Classes utilitaire pour afficher et cacher du contenu pour des appareils "
+"plus étroits que {} pixels"
+
+#: bootstrap/container.py:268
+msgid ""
+"Utility classes for showing and hiding content by devices wider than {} "
+"pixels."
+msgstr ""
+"Classes utilitaire pour afficher et cacher le contenu pour des appareils "
+"plus larges que {} pixels."
+
+#: bootstrap/container.py:269
+msgid "Utility classes for showing and hiding content for all devices."
+msgstr ""
+"Classes utilitaire pour afficher et cacher du contenu pour tous les "
+"périphériques."
+
+#: bootstrap/container.py:339
+#, python-brace-format
+msgid "widths: {0} units"
+msgstr "Largeurs: {0} unités"
+
+#: bootstrap/container.py:342
+#, python-brace-format
+msgid "default width: {0} unit"
+msgid_plural "default width: {0} units"
+msgstr[0] "Largeur par défaut: {0} unité"
+msgstr[1] "Largeur par défaut: {0} unités"
+
+#: bootstrap/container.py:344
+msgid "unknown width"
+msgstr "Largeur inconnue"
+
+#: bootstrap/gallery.py:32 bootstrap/image.py:49 bootstrap/image.py:71
+#: bootstrap/image.py:127 bootstrap/picture.py:64
+msgid "Image"
+msgstr "Image"
+
+#: bootstrap/gallery.py:33 bootstrap/image.py:59
+msgid "Image Title"
+msgstr "Image Title"
+
+#: bootstrap/gallery.py:35 bootstrap/image.py:60
+msgid "Caption text added to the 'title' attribute of the <img> element."
+msgstr "Texte de légende ajouté à l'attribut 'title' de l'élément <img>."
+
+#: bootstrap/gallery.py:36 bootstrap/image.py:65
+msgid "Alternative Description"
+msgstr "Description alternative"
+
+#: bootstrap/gallery.py:38 bootstrap/image.py:66
+msgid ""
+"Textual description of the image added to the 'alt' tag of the <img> element."
+msgstr ""
+"Description textuelle de l'image ajoutée à la balise 'alt' de l'élément "
+"<img>."
+
+#: bootstrap/gallery.py:85
+msgid "Gallery"
+msgstr "Galerie"
+
+#: bootstrap/gallery.py:87
+msgid ""
+"<p>Add images, which make up a set to be used as gallery.</p><p>All "
+"thumbnails for these images are resized to the same widths and heights.</p>"
+msgstr ""
+"<p> Ajoutez des images, qui constituent un ensemble à utiliser comme "
+"galerie. </p><p> Tous les miniatures de ces images sont redimensionnées avec "
+"les mêmes largeurs et hauteurs.</p>"
+
+#: bootstrap/gallery.py:98 bootstrap/image.py:84
+msgid "Responsive"
+msgstr "Responsive"
+
+#: bootstrap/gallery.py:99 bootstrap/image.py:86 bootstrap/picture.py:34
+msgid "Upscale image"
+msgstr "Image haut de gamme"
+
+#: bootstrap/gallery.py:99 bootstrap/image.py:86 bootstrap/picture.py:34
+msgid "Crop image"
+msgstr "Recadrer l'image"
+
+#: bootstrap/gallery.py:100 bootstrap/image.py:87 bootstrap/picture.py:35
+msgid "With subject location"
+msgstr "Avec l'emplacement du sujet"
+
+#: bootstrap/gallery.py:101 bootstrap/image.py:88 bootstrap/picture.py:36
+msgid "Optimized for Retina"
+msgstr "Optimisé pour Retina"
+
+#: bootstrap/gallery.py:105
+msgid "Image Responsiveness"
+msgstr "Réactivité de l'image"
+
+#: bootstrap/gallery.py:111 bootstrap/image.py:98
+msgid "Responsive Image Width"
+msgstr "Largeur de l'image réactive"
+
+#: bootstrap/gallery.py:113 bootstrap/image.py:100
+msgid "Set the image width in percent relative to containing element."
+msgstr ""
+"Réglez la largeur de l'image en pour cent par rapport à l'élément contenant."
+
+#: bootstrap/gallery.py:118 bootstrap/image.py:105
+msgid "Fixed Image Width"
+msgstr "Largeur de l'image fixe"
+
+#: bootstrap/gallery.py:119 bootstrap/image.py:106
+msgid "Set a fixed image width in pixels."
+msgstr "Définir une largeur de l'image fixe en pixels."
+
+#: bootstrap/gallery.py:124 bootstrap/image.py:111
+msgid "Adapt Image Height"
+msgstr "Adapter l'hauteur de l'image"
+
+#: bootstrap/gallery.py:125 bootstrap/image.py:112
+msgid "Set a fixed height in pixels, or percent relative to the image width."
+msgstr ""
+"Définir une hauteur fixe en pixels, ou pour cent par rapport à la largeur de "
+"l'image."
+
+#: bootstrap/gallery.py:130
+msgid "Thumbnail Width"
+msgstr "Largeur de vignette"
+
+#: bootstrap/gallery.py:131
+msgid "Set a fixed thumbnail width in pixels."
+msgstr "Définir une largeur fixe de la vignette en pixels."
+
+#: bootstrap/gallery.py:136
+msgid "Thumbnail Height"
+msgstr "Hauteur de la vignette"
+
+#: bootstrap/gallery.py:137
+msgid ""
+"Set a fixed height in pixels, or percent relative to the thumbnail width."
+msgstr ""
+"Définissez une hauteur fixe en pixels, ou un pourcentage par rapport à la "
+"largeur des vignettes."
+
+#: bootstrap/gallery.py:194
+#, python-brace-format
+msgid "with {0} image"
+msgid_plural "with {0} images"
+msgstr[0] "Avec {0} image"
+msgstr[1] "Avec {0} images"
+
+#: bootstrap/image.py:23
+msgid "No Link"
+msgstr "Pas de lien"
+
+#: bootstrap/image.py:84
+msgid "Rounded"
+msgstr "Arrondi"
+
+#: bootstrap/image.py:85
+msgid "Circle"
+msgstr "Cercle"
+
+#: bootstrap/image.py:85
+msgid "Thumbnail"
+msgstr "Vignette"
+
+#: bootstrap/image.py:92
+msgid "Image Shapes"
+msgstr "Formes d'image"
+
+#: bootstrap/image.py:159
+msgid "No Image"
+msgstr "Pas d'image"
+
+#: bootstrap/jumbotron.py:75
+msgid "You must at least set a background width."
+msgstr "Vous devez au moins définir une largeur de fond."
+
+#: bootstrap/jumbotron.py:80
+msgid "Jumbotron"
+msgstr "Écran géant"
+
+#: bootstrap/jumbotron.py:109 bootstrap/picture.py:40
+msgid "Adapt Picture Heights"
+msgstr "Adapter les hauteurs d'image"
+
+#: bootstrap/jumbotron.py:112 bootstrap/picture.py:42
+msgid ""
+"Heights of picture in percent or pixels for distinct Bootstrap's breakpoints."
+msgstr ""
+"Hauteurs de l'image en pourcentage ou en pixels pour les points d'arrêt "
+"distincts de Bootstrap."
+
+#: bootstrap/jumbotron.py:125
+msgid "Background color"
+msgstr "Couleur de fond"
+
+#: bootstrap/jumbotron.py:131
+msgid "This property specifies how an image repeates."
+msgstr "Cette propriété spécifie comment une image se répète."
+
+#: bootstrap/jumbotron.py:137
+msgid ""
+"This property specifies how to move the background relative to the viewport."
+msgstr ""
+"Cette propriété spécifie comment déplacer l'arrière-plan par rapport à la "
+"fenêtre."
+
+#: bootstrap/jumbotron.py:143
+msgid "This property moves a background image vertically within its container."
+msgstr ""
+"Cette propriété déplace une image d'arrière-plan verticalement dans son "
+"conteneur."
+
+#: bootstrap/jumbotron.py:149
+msgid ""
+"This property moves a background image horizontally within its container."
+msgstr ""
+"Cette propriété déplace une image de fond horizontalement dans son conteneur."
+
+#: bootstrap/jumbotron.py:155
+msgid "Background size"
+msgstr "Taille de l'arrière-plan"
+
+#: bootstrap/jumbotron.py:156
+msgid "This property specifies how an image is sized."
+msgstr "Cette propriété spécifie comment une image est dimensionnée."
+
+#: bootstrap/jumbotron.py:162
+msgid "Background width and height"
+msgstr "Largeur et hauteur du fond"
+
+#: bootstrap/jumbotron.py:163
+msgid "This property specifies the width and height of a background image."
+msgstr ""
+"Cette propriété spécifie la largeur et la hauteur d'une image d'arrière-plan."
+
+#: bootstrap/jumbotron.py:205
+msgid "Without background image"
+msgstr "Sans image de fond"
+
+#: bootstrap/picture.py:20
+msgid "Picture"
+msgstr "Photo"
+
+#: bootstrap/picture.py:47
+msgid "Adapt Picture Zoom"
+msgstr "Adapter le zoom d'image"
+
+#: bootstrap/picture.py:49
+msgid ""
+"Magnification of picture in percent for distinct Bootstrap's breakpoints."
+msgstr ""
+"Grossissement de l'image en pourcentage pour les points d'arrêt distincts de "
+"Bootstrap."
+
+#: bootstrap/picture.py:97
+msgid "No Picture"
+msgstr "Pas de photo"
+
+#: bootstrap/secondary_menu.py:17
+msgid "Secondary Menu"
+msgstr "Menu secondaire"
+
+#: bootstrap/secondary_menu.py:26
+msgid "CMS Page Id"
+msgstr "ID de la page CMS"
+
+#: bootstrap/secondary_menu.py:27
+msgid "Select a CMS page with a given unique Id (in advanced settings)."
+msgstr ""
+"Sélectionnez une page CMS avec un identifiant unique donné (dans les "
+"paramètres avancés)."
+
+#: bootstrap/settings.py:21
+msgid "mobile phones"
+msgstr "téléphones portables"
+
+#: bootstrap/settings.py:22
+#| msgid "tablets"
+msgid "phablets"
+msgstr "phablets"
+
+#: bootstrap/settings.py:23
+msgid "tablets"
+msgstr "tablette"
+
+#: bootstrap/settings.py:24
+msgid "laptops"
+msgstr "Ordinateurs portables"
+
+#: bootstrap/settings.py:25
+msgid "large desktops"
+msgstr "Ordinateurs de bureau"
+
+#: bootstrap/settings.py:37
+msgid "default"
+msgstr "standard"
+
+#: bootstrap/settings.py:38
+msgid "unstyled"
+msgstr "pas de style"
+
+#: bootstrap/tabs.py:21
+msgid "Tabs"
+msgstr "Onglets"
+
+#: bootstrap/tabs.py:22
+msgid "Number of tabs."
+msgstr "Nombre d'onglets."
+
+#: bootstrap/tabs.py:26
+msgid "Tab Set"
+msgstr "Ensemble d'onglets"
+
+#: bootstrap/tabs.py:36
+msgid "Justified tabs"
+msgstr "Onglets justifiés"
+
+#: bootstrap/tabs.py:43
+#| msgid "with {0} panel"
+#| msgid_plural "with {0} panels"
+msgid "with {} tab"
+msgid_plural "with {} tabs"
+msgstr[0] "Avec l'onglet {}"
+msgstr[1] "Avec {} onglets"
+
+#: bootstrap/tabs.py:55
+#| msgid "Panel"
+msgid "Tab Pane"
+msgstr "Tableau des onglets"
+
+#: bootstrap/tabs.py:63
+#| msgid "Title"
+msgid "Tab Title"
+msgstr "Titre de l'onglet"
+
+#: templates/bootstrap/components/paginator.html:12
+msgid "current"
+msgstr "actuel"
+
+#: templates/bootstrap/includes/language-chooser.html:4
+msgid "Change Language"
+msgstr "Changer de langue"
+
+#: templates/bootstrap/includes/nav-navbar.html:9
+msgid "Toggle navigation"
+msgstr "Basculer la navigation"
+
+#: templates/bootstrap/includes/nav-secondary.html:8
+#| msgid "Custom Snippet"
+msgid "Customer Account"
+msgstr "Compte client"
+
+#~ msgid "django CMS Cascade"
+#~ msgstr "django CMS Cascade"
+
+#~ msgid "Panels"
+#~ msgstr "Panneaux"
+
+#~ msgid "Number of panels for this panel group."
+#~ msgstr "Nombre de panneaux pour ce groupe de panneaux."
+
+#~ msgid "Open only one panel at a time."
+#~ msgstr "Ouvrir un seul panneau à la fois."
+
+#~ msgid "First panel open"
+#~ msgstr "Premier panneau ouvert"
+
+#~ msgid "Start with the first panel open."
+#~ msgstr "Commencez par ouvrir le premier panneau."
+
+#~ msgid "with {0} panel"
+#~ msgid_plural "with {0} panels"
+#~ msgstr[0] "Avec {0} panneau "
+#~ msgstr[1] "Avec {0} panneaux"
+
+#~ msgid "Accordion Panel"
+#~ msgstr "Panneau d'accordéon"
+
+#~ msgid "Panel type"
+#~ msgstr "Type de panneau"
+
+#~ msgid "Display Panel using this style."
+#~ msgstr "Panneau d'affichage utilisant ce style."
+
+#~ msgid "Panel Title"
+#~ msgstr "Titre du panneau"
+
+#~ msgid "Extra small"
+#~ msgstr "Super petit"
+
+#~ msgid "Pull left"
+#~ msgstr "Tire vers la gauche"
+
+#~ msgid "Pull right"
+#~ msgstr "Tire à droite"
+
+#~ msgid "Map"
+#~ msgstr "Carte"
+
+#, fuzzy
+#~| msgid "Image Responsiveness"
+#~ msgid "Map Responsiveness"
+#~ msgstr "Réactivité de l'image"
+
+#, fuzzy
+#~| msgid "Responsive Image Width"
+#~ msgid "Responsive Map Width"
+#~ msgstr "Largeur de carte réceptive"
+
+#, fuzzy
+#~| msgid "Set the image width in percent relative to containing element."
+#~ msgid "Set the map width in percent relative to containing element."
+#~ msgstr ""
+#~ "Définissez la largeur de la carte en pourcentage par rapport à l'élément "
+#~ "contenant."
+
+#, fuzzy
+#~| msgid "Fixed Image Width"
+#~ msgid "Fixed Map Width"
+#~ msgstr "Largeur de l'image fixe"
+
+#, fuzzy
+#~| msgid "Set a fixed image width in pixels."
+#~ msgid "Set a fixed map width in pixels."
+#~ msgstr "Définissez une largeur de carte fixe en pixels."
+
+#, fuzzy
+#~| msgid "Adapt Image Height"
+#~ msgid "Adapt Map Height"
+#~ msgstr "Adaptez la hauteur de la carte"
+
+#, fuzzy
+#~| msgid ""
+#~| "Set a fixed height in pixels, or percent relative to the image width."
+#~ msgid "Set a fixed height in pixels, or percent relative to the map width."
+#~ msgstr ""
+#~ "Définissez une hauteur fixe en pixels, ou un pourcentage par rapport à la "
+#~ "largeur de la carte.."
+
+#~ msgid "Panel"
+#~ msgstr "Panneau"
+
+#~ msgid "Panel Heading"
+#~ msgstr "Panneau de titre"
+
+#~ msgid "Panel Footer"
+#~ msgstr "Panneau bas de page"
+
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Copier dans le presse-papier"
+
+#~ msgid "Successfully pasted JSON data"
+#~ msgstr "Les données JSON ont été collées avec succès"
+
+#~ msgid "Successfully copied JSON data"
+#~ msgstr "Les données JSON ont été copiées avec succès"
+
+#~ msgid "Insert Data"
+#~ msgstr "Insérer des données"
+
+#~ msgid "From CMS Clipboard"
+#~ msgstr "Du Presse-papiers CMS"
+
+#~ msgid "Restore Data"
+#~ msgstr "Restaurer les données"
+
+#~ msgid "To CMS Clipboard"
+#~ msgstr "Au Presse-papiers CMS"
+
+#~ msgid "In '%(label)s': Value '%(value)s' is not a valid color."
+#~ msgstr "Dans '%(label)s': Valeur '%(value)s' n'est pas une couleur valide."
+
+#~ msgid "'%s' is not a valid CSS class name."
+#~ msgstr "'%s' n'est pas un nom de classe CSS valide."
+
+#~ msgid "px, em and %"
+#~ msgstr "px, em et %"
+
+#~ msgid "px and em"
+#~ msgstr "px et em"
+
+#, fuzzy
+#~| msgid "px and em"
+#~ msgid "px and %"
+#~ msgstr "px et em"
+
+#~ msgid "CSS class names"
+#~ msgstr "Nom de classe CSS"
+
+#~ msgid ""
+#~ "Freely selectable CSS classnames for this Plugin, separated by commas."
+#~ msgstr ""
+#~ "Noms de classe CSS sélectionnables pour ce plugin, séparés par des "
+#~ "virgules."
+
+#~ msgid "Allow multiple"
+#~ msgstr "Autoriser plusieurs"
+
+#~ msgid "Customized {0} Fields:"
+#~ msgstr "Champs Personnalisés {0}:"
+
+#~ msgid "Units for {0} Fields:"
+#~ msgstr "Unités pour {0} Champs:"
+
+#~ msgid "Module"
+#~ msgstr "Module"
+
+#, fuzzy
+#~| msgid "Custom CSS classes and styles"
+#~ msgid "Allowed Classes and Styles"
+#~ msgstr "Classes et styles autorisés"
+
+#~ msgid "Named Element ID"
+#~ msgstr "ID d'élément nommé"
+
+#~ msgid "Select CSS"
+#~ msgstr "Sélectionnez CSS"
+
+#~ msgid "Customized CSS Classes"
+#~ msgstr "Classes CSS personnalisées"
+
+#~ msgid "Customized CSS classes to be added to this element."
+#~ msgstr "Classes CSS personnalisées à ajouter à cet élément."
+
+#~ msgid "Simple Wrapper"
+#~ msgstr "Enveloppe simple"
+
+#~ msgid "<{}> – Element"
+#~ msgstr "<{}> – Élément"
+
+#~ msgid "Naked Wrapper"
+#~ msgstr "Enveloppe Nu"
+
+#~ msgid "HTML element tag"
+#~ msgstr "Tag d'élément HTML"
+
+#~ msgid "Choose a tag type for this HTML element."
+#~ msgstr "Choisissez un type de tag pour cet élément HTML."
+
+#~ msgid "Horizontal Rule"
+#~ msgstr "Règle horizontale"
+
+#, fuzzy
+#~| msgid "Heading {}"
+#~ msgid "Heading"
+#~ msgstr "Titre"
+
+#, fuzzy
+#~| msgid "Heading Size"
+#~ msgid "Heading content"
+#~ msgstr "Taille de la rubrique"
+
+#~ msgid "The element ID '{}' is not unique for this page."
+#~ msgstr "L'élément ID '{}' n'est pas unique pour cette page."
+
+#, fuzzy
+#~| msgid "Named Element ID"
+#~ msgid "Element ID"
+#~ msgstr "ID de l'élément"
+
+#~ msgid "A unique identifier for this element."
+#~ msgstr "Un identifiant unique pour cet élément."
+
+#, fuzzy
+#~| msgid "Used by plugins"
+#~ msgid "Hide plugin"
+#~ msgstr "Masquer le plugin"
+
+#~ msgid "Hide this plugin and all of it's children."
+#~ msgstr "Masquer ce plugin et tous ses enfants."
+
+#~ msgid "The uploaded zip archive is not packed correctly"
+#~ msgstr "L'archive zip téléchargée n'est pas correctement chargée"
+
+#~ msgid "Can not unzip uploaded archive. Reason: {}"
+#~ msgstr "Impossible de décompresser les archives téléchargées. Raison: {}"
+
+#~ msgid "Preview Icons"
+#~ msgstr "Aperçu des icônes"
+
+#~ msgid "Icon"
+#~ msgstr "Icône"
+
+#~ msgid "Square"
+#~ msgstr "Carré"
+
+#~ msgid "Icon size"
+#~ msgstr "Taille de l'icône"
+
+#~ msgid "Icon color"
+#~ msgstr "Couleur de l'icône"
+
+#, fuzzy
+#~| msgid "Do not float"
+#~ msgid "Do not align"
+#~ msgstr "Ne pas aligner"
+
+#~ msgid "Left"
+#~ msgstr "Gauche"
+
+#~ msgid "Center"
+#~ msgstr "Centre"
+
+#~ msgid "Right"
+#~ msgstr "Droite"
+
+#~ msgid "Text alignment"
+#~ msgstr "Alignement du texte"
+
+#~ msgid "Align the icon inside the parent column."
+#~ msgstr "Alignez l'icône à l'intérieur de la colonne parent."
+
+#~ msgid "Set border"
+#~ msgstr "Définir une bordure"
+
+#~ msgid "Border radius"
+#~ msgstr "Rayon de bordure"
+
+#~ msgid "Link Content"
+#~ msgstr "Lien du contenu"
+
+#~ msgid "Content of Link"
+#~ msgstr "Contenu du lien"
+
+#~ msgid "CMS Page"
+#~ msgstr "Page CMS"
+
+#~ msgid "External URL"
+#~ msgstr "URL externe"
+
+#~ msgid "Mail To"
+#~ msgstr "Envoyer à"
+
+#~ msgid "An internal link onto CMS pages of this site"
+#~ msgstr "Un lien interne sur les pages CMS de ce site"
+
+#~ msgid "Page bookmark"
+#~ msgstr "Marqueur de page"
+
+#~ msgid "Link onto external page"
+#~ msgstr "Lien vers une page externe"
+
+#~ msgid "Open Email program with this address"
+#~ msgstr "Ouvrez le programme de messagerie électronique avec cette adresse"
+
+#~ msgid "Page root"
+#~ msgstr "Racine de la page"
+
+#~ msgid "Same Window"
+#~ msgstr "Même fenêtre"
+
+#~ msgid "New Window"
+#~ msgstr "Nouvelle fenetre"
+
+#~ msgid "Parent Window"
+#~ msgstr "Fenêtre parentale"
+
+#~ msgid "Topmost Frame"
+#~ msgstr "Cadre le plus haut"
+
+#~ msgid "Link Target"
+#~ msgstr "Cible du lien"
+
+#~ msgid "Open Link in other target."
+#~ msgstr "Ouvrir le lien dans une autre cible."
+
+#~ msgid "Title"
+#~ msgstr "Titre"
+
+#~ msgid "Link's Title"
+#~ msgstr "Titre du lien"
+
+#~ msgid "Plugin Name"
+#~ msgstr "Nom du plugin"
+
+#~ msgid "Identifier"
+#~ msgstr "identificateurs"
+
+#~ msgid "Shared between Plugins"
+#~ msgstr "Partagé entre plugins"
+
+#, fuzzy
+#~| msgid "Segment"
+#~ msgid "Element"
+#~ msgstr "Élément"
+
+#~ msgid "Sort by"
+#~ msgstr "Trier par"
+
+#~ msgid "Site"
+#~ msgstr "Site"
+
+#~ msgid "Custom CSS classes and styles"
+#~ msgstr "Personnalisés les classes CSS et les styles"
+
+#~ msgid "Segmentation"
+#~ msgstr "Segmentation"
+
+#~ msgid "Persited Clipboard Content"
+#~ msgstr "Contenu de presse-papiers persistant"
+
+#, fuzzy
+#~| msgid "There are no further settings for this plugin"
+#~ msgid "User editable settings for this page."
+#~ msgstr "Paramètres éditables par l'utilisateur pour cette page."
+
+#~ msgid "Store for arbitrary page data."
+#~ msgstr "Stockez pour des données de page arbitraires."
+
+#, fuzzy
+#~| msgid "Shared Settings"
+#~ msgid "Cascade Page Settings"
+#~ msgstr "Paramètres de la page Cascade"
+
+#~ msgid "A unique identifier to distinguish this icon font."
+#~ msgstr "Un identifiant unique pour distinguer cette police d'icône."
+
+#~ msgid ""
+#~ "Upload a zip file created on <a href=\"http://fontello.com/\" target="
+#~ "\"_blank\">Fontello</a> containing fonts."
+#~ msgstr ""
+#~ "Téléchargez un fichier zip créé sur <a href=\"http://fontello.com/\" "
+#~ "target=\"_blank\">Fontello</a> contenant les fontes. "
+
+#~ msgid "Uploaded Icon Font"
+#~ msgstr "Police d'icone téléchargée"
+
+#~ msgid "Uploaded Icon Fonts"
+#~ msgstr "Polices d'icônes téléchargées"
+
+#~ msgid "Render template"
+#~ msgstr "Modèle de rendu"
+
+#~ msgid "Use alternative template for rendering this plugin."
+#~ msgstr "Utilisez un autre modèle pour rendre ce plugin."
+
+#~ msgid "Segment"
+#~ msgstr "Segment"
+
+#~ msgid "Condition tag"
+#~ msgstr "Condition tag"
+
+#~ msgid "Django's condition tag"
+#~ msgstr "Django's condition tag"
+
+#~ msgid "Condition evaluation"
+#~ msgstr "Évaluation de la condition"
+
+#~ msgid "Evaluation as used in Django's template tags for conditions"
+#~ msgstr ""
+#~ "Évaluation utilisée dans les tag de modèle Django pour les conditions"
+
+#~ msgid "Unable to evaluate condition: {err}"
+#~ msgstr "Impossible d'évaluer la condition: {err}"
+
+#~ msgid "if"
+#~ msgstr "si"
+
+#~ msgid "elif"
+#~ msgstr "sinon si"
+
+#~ msgid "else"
+#~ msgstr "sinon"
+
+#~ msgid "Emulate User"
+#~ msgstr "Emuler l'utilisateur"
+
+#~ msgid "Clear emulations"
+#~ msgstr "Annuler les emulations "
+
+#~ msgid "%(total_count)s selected"
+#~ msgid_plural "All %(total_count)s selected"
+#~ msgstr[0] "%(total_count)s selectionnés"
+#~ msgstr[1] "All %(total_count)s selectionnés"
+
+#~ msgid "0 of %(cnt)s selected"
+#~ msgstr "0 of %(cnt)s selectionné"
+
+#~ msgid "Select %(user_model)s to emulate"
+#~ msgstr "Sélectionnez %(user_model)s à emuler"
+
+#~ msgid "with line break"
+#~ msgstr "Avec rupture de ligne"
+
+#~ msgid "Shared Fields"
+#~ msgstr "Champs partagés"
+
+#, fuzzy
+#~| msgid "There are no further settings for this plugin"
+#~ msgid "Change shared settings of {} plugin"
+#~ msgstr "Modifier les paramètres partagés de {} plugin"
+
+#~ msgid "Used by plugins"
+#~ msgstr "Utilisé par des plugins"
+
+#, fuzzy
+#~| msgid "Plugin Name"
+#~ msgid "Plugin Type"
+#~ msgstr "Type de plugin"
+
+#~ msgid "Shared Settings"
+#~ msgstr "Paramètres partagés"
+
+#~ msgid "Use individual settings"
+#~ msgstr "Utilisez les paramètres individuels"
+
+#~ msgid "Use settings shared with other plugins of this type"
+#~ msgstr "Utilisez les paramètres partagés avec d'autres plugins de ce type"
+
+#~ msgid "Remember these settings as:"
+#~ msgstr "Rappelez-vous ces paramètres comme suit:"
+
+#~ msgid ""
+#~ "The identifier '{0}' has already been used, please choose another name."
+#~ msgstr "L'identifiant '{0}' a déjà été utilisé, choisissez un autre nom."
+
+#~ msgid "There are no further settings for this plugin"
+#~ msgstr "Il n'y a pas d'autres paramètres pour ce plugin"
+
+#~ msgid "Please hit OK to save."
+#~ msgstr "Cliquez sur OK pour enregistrer."
+
+#~ msgid "Home"
+#~ msgstr "Accueil"
+
+#~ msgid "Add"
+#~ msgstr "Ajouter"
+
+#, fuzzy
+#~| msgid "Unable to evaluate condition: {err}"
+#~ msgid "Unable to link onto '{0}'."
+#~ msgstr "Impossible de lier '{0}'."
+
+#~ msgid "In '%(label)s': This field is required."
+#~ msgstr "Dans '%(label)s':Ce champ est requis."
+
+#, fuzzy
+#~| msgid "In '%(label)s': Value '%(value)s' shall contain a valid number."
+#~ msgid ""
+#~ "In '%(label)s': Value '%(value)s' shall contain a valid decimal number."
+#~ msgstr ""
+#~ "Dans '%(label)s': Valeur '%(value)s' doit contenir un nombre décimal "
+#~ "valide."
+
+#~ msgid ""
+#~ "In '%(label)s': Value '%(value)s' shall contain a valid number, ending in "
+#~ "%(endings)s."
+#~ msgstr ""
+#~ "Dans '%(label)s': Valeur '%(value)s' doit contenir un numéro valide, se "
+#~ "terminant en %(endings)s."
+
+#~ msgid "or"
+#~ msgstr "ou"
+
+#~ msgid ""
+#~ "In '%(label)s': Value '%(value)s' for field '%(field)s' shall contain a "
+#~ "valid number, ending in %(endings)s."
+#~ msgstr ""
+#~ "Dans '%(label)s': Valeur '%(value)s' pour le champ '%(field)s' contiendra "
+#~ "un numéro valide, se terminant en %(endings)s."
+
+#, fuzzy
+#~| msgid "In '%(label)s': Value '%(value)s' is not a valid color."
+#~ msgid "In '%(label)s': Value '%(value)s' is not a valid border style."
+#~ msgstr ""
+#~ "Dans '%(label)s': Valeur '%(value)s' n'est pas un style de bordure valide."
+
+#~ msgid "In '%(label)s': Field '%(field)s' is required."
+#~ msgstr "Dans '%(label)s': Champ '%(field)s' est requis.."
+
+#~ msgid "Prepend icon"
+#~ msgstr "Icône préfix"
+
+#~ msgid "Prepend a Glyphicon before the content."
+#~ msgstr "Préfixer le contenu par un Glyphicon."
+
+#~ msgid "Append icon"
+#~ msgstr "Ajouter l'icône"
+
+#~ msgid "Slide Caption"
+#~ msgstr "Slide Légende"
+
+#~ msgid "Caption text to be laid over the backgroud image."
+#~ msgstr "Le texte de la légende doit être posé sur l'image de fond."
+
+#~ msgid "Tiny (<{sm[0]}px)"
+#~ msgstr "Minuscule (<{sm[0]}px)"
+
+#~ msgid "Small (≥{sm[0]}px and <{md[0]}px)"
+#~ msgstr "Petit (≥{sm[0]}px and <{md[0]}px)"
+
+#~ msgid "Medium (≥{md[0]}px and <{lg[0]}px)"
+#~ msgstr "Moyen (≥{md[0]}px and <{lg[0]}px)"
+
+#~ msgid "Large (≥{lg[0]}px)"
+#~ msgstr "Grand (≥{lg[0]}px)"
+
+#~ msgid "Change %s"
+#~ msgstr "Changements %s"
