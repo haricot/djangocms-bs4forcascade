@@ -1,4 +1,4 @@
-# djangocms-bootstrap4beta
+# djangocms-bs4forcascade     
 
 Currently with bootstrap v4.0.0-alpha.6
 
