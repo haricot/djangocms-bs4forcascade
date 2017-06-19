@@ -12,7 +12,9 @@ INSTALLED_APPS = (
     'cms_bootstrap4',
 ...
 )
+```
 
+```
 CMSPLUGIN_CASCADE_PLUGINS = (
 ..
 'cms_bootstrap4.bootstrap',
