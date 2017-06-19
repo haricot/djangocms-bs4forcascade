@@ -90,7 +90,7 @@ CMSPLUGIN_CASCADE = {
 
 ```
 
-Add replace all :
+And replace all :
 ```
 CMSPLUGIN_CASCADE['bootstrap3'] to CMSPLUGIN_CASCADE['bootstrap4']
 ```
