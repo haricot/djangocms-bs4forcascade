@@ -83,7 +83,7 @@ CMSPLUGIN_CASCADE = {
     #     ),
     # },
     'exclude_hiding_plugin': ('SegmentPlugin', 'Badge'),
-    'bootstrap3': {},
+    'bootstrap4': {},
     'allow_plugin_hiding': True,
 }
 
