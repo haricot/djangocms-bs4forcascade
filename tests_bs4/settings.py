@@ -25,7 +25,7 @@ MEDIA_URL = '/media/'
 TEMPLATES = [{
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
     'APP_DIRS': True,
-    'DIRS': ['tests/templates'],
+    'DIRS': ['tests_bs4/templates'],
     'OPTIONS': {
         'context_processors': (
             'django.contrib.auth.context_processors.auth',
