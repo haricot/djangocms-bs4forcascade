@@ -124,7 +124,7 @@ class CarouselPlugin(Bootstrap4PluginBase):
 plugin_pool.register_plugin(CarouselPlugin)
 
 
-class CarouselSlidePlugin(ImageAnnotationMixin, BootstrapPluginBase):
+class CarouselSlidePlugin(ImageAnnotationMixin, Bootstrap4PluginBase):
     name = _("Slide")
     model_mixins = (ImagePropertyMixin,)
     form = ImageForm
