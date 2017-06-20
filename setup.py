@@ -28,7 +28,7 @@ CLASSIFIERS = [
 
 
 setup(
-    name='djangocms-bootstrap4',
+    name='djangocms-bs4forcascade',
     version=__version__,
     description='Templates and templatetags to be used with djangoCMS and Bootstrap4.',
     author='Nicolas PASCAL',
