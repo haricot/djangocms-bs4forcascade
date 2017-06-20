@@ -124,45 +124,15 @@ class CarouselPlugin(Bootstrap4PluginBase):
 plugin_pool.register_plugin(CarouselPlugin)
 
 
-class CarouselSlidePlugin(Bootstrap4PluginBase):
+class CarouselSlidePlugin(ImageAnnotationMixin, BootstrapPluginBase):
     name = _("Slide")
-  
-    parent_classes = ['CarouselPlugin']
- 
-    render_template = 'cascade/bootstrap4/carousel-slide.html'
-    alien_child_classes = True
-    allow_children = True
-
-    def render(self, context, instance, placeholder):
-        # slide image shall be rendered in a responsive context using the ``<picture>`` element
-        context.update({
-            'instance': instance,
-        })
-        return super(CarouselSlidePlugin, self).render(context, instance, placeholder)
-
-    @classmethod
-    def sanitize_model(cls, obj):
-        sanitized = super(CarouselSlidePlugin, cls).sanitize_model(obj)
-        return sanitized
-
-    @classmethod
-    def get_identifier(cls, obj):
-        identifier = super(CarouselSlidePlugin, cls).get_identifier(obj)
-        try:
-            content = obj.image.name or obj.image.original_filename
-        except AttributeError:
-            content = _("Empty Slide")
-        return format_html('{0}{1}', identifier, content)
-
-class CarouselSlideImagePlugin(ImageAnnotationMixin, Bootstrap4PluginBase):
-    name = _("Slide_Image")
     model_mixins = (ImagePropertyMixin,)
     form = ImageForm
-    default_css_class = 'd-block img-fluid'
-    parent_classes = ['CarouselSlidePlugin']
+    default_css_class = 'img-responsive'
+    parent_classes = ['CarouselPlugin']
     raw_id_fields = ('image_file',)
     fields = ('image_file', 'glossary',)
-    render_template = 'cascade/bootstrap4/carousel-slide-image.html'
+    render_template = 'cascade/bootstrap4/carousel-slide.html'
     alien_child_classes = True
 
     def render(self, context, instance, placeholder):
@@ -176,11 +146,11 @@ class CarouselSlideImagePlugin(ImageAnnotationMixin, Bootstrap4PluginBase):
             'placeholder': placeholder,
             'elements': elements,
         })
-        return super(CarouselSlideImagePlugin, self).render(context, instance, placeholder)
+        return super(CarouselSlidePlugin, self).render(context, instance, placeholder)
 
     @classmethod
     def sanitize_model(cls, obj):
-        sanitized = super(CarouselSlideImagePlugin, cls).sanitize_model(obj)
+        sanitized = super(CarouselSlidePlugin, cls).sanitize_model(obj)
         resize_options = obj.get_parent_glossary().get('resize_options', [])
         if obj.glossary.get('resize_options') != resize_options:
             obj.glossary.update(resize_options=resize_options)
@@ -189,7 +159,7 @@ class CarouselSlideImagePlugin(ImageAnnotationMixin, Bootstrap4PluginBase):
 
     @classmethod
     def get_identifier(cls, obj):
-        identifier = super(CarouselSlideImagePlugin, cls).get_identifier(obj)
+        identifier = super(CarouselSlidePlugin, cls).get_identifier(obj)
         try:
             content = obj.image.name or obj.image.original_filename
         except AttributeError:
@@ -197,5 +167,3 @@ class CarouselSlideImagePlugin(ImageAnnotationMixin, Bootstrap4PluginBase):
         return format_html('{0}{1}', identifier, content)
 
 plugin_pool.register_plugin(CarouselSlidePlugin)
-
-plugin_pool.register_plugin(CarouselSlideImagePlugin)
