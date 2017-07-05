@@ -10,6 +10,8 @@ from filer.models.imagemodels import Image
 
 from cms.api import add_plugin
 from cms.utils.plugins import build_plugin_tree
+
+from cmsplugin_cascade import app_settings
 from cms_bootstrap4.bootstrap.container import (Bootstrap4ContainerPlugin, Bootstrap4RowPlugin,
         Bootstrap4ColumnPlugin)
 from cms_bootstrap4.bootstrap.jumbotron import BootstrapJumbotronPlugin, ImageBackgroundMixin
@@ -17,7 +19,7 @@ from cms_bootstrap4.bootstrap import settings
 from cmsplugin_cascade.mixins import ImagePropertyMixin
 from .test_base import CascadeTestCase
 
-BS4_BREAKPOINT_KEYS = list(tp[0] for tp in settings.CMSPLUGIN_CASCADE['bootstrap4']['breakpoints'])
+BS4_BREAKPOINT_KEYS = list(tp[0] for tp in app_settings.CMSPLUGIN_CASCADE['bootstrap4']['breakpoints'])
 
 
 class JumbotronPluginTest(CascadeTestCase):

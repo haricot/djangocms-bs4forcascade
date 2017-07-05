@@ -15,13 +15,14 @@ from filer.admin.clipboardadmin import ajax_upload
 from cms.api import add_plugin
 from cms.utils.plugins import build_plugin_tree
 
+from cmsplugin_cascade import app_settings
 from cmsplugin_cascade.models import IconFont
-from cmsplugin_cascade.settings import CMSPLUGIN_CASCADE
+
 from cms_bootstrap4.bootstrap.container import Bootstrap4ContainerPlugin
 from cmsplugin_cascade.icon.cms_plugins import FramedIconPlugin
 from .test_base import CascadeTestCase
 
-BS4_BREAKPOINT_KEYS = list(tp[0] for tp in CMSPLUGIN_CASCADE['bootstrap4']['breakpoints'])
+BS4_BREAKPOINT_KEYS = list(tp[0] for tp in app_settings.CMSPLUGIN_CASCADE['bootstrap4']['breakpoints'])
 
 
 class IconFontTestCase(CascadeTestCase):

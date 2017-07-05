@@ -13,7 +13,7 @@ from cms_bootstrap4.bootstrap import settings
 from .test_base import CascadeTestCase
 
 
-BS4_BREAKPOINT_KEYS = list(tp[0] for tp in settings.CMSPLUGIN_CASCADE['bootstrap4']['breakpoints'])
+BS4_BREAKPOINT_KEYS = list(tp[0] for tp in app_settings.CMSPLUGIN_CASCADE['bootstrap4']['breakpoints'])
 
 
 class AccordionPluginTest(CascadeTestCase):
@@ -63,7 +63,7 @@ class AccordionPluginTest(CascadeTestCase):
     @override_settings()
     def test_bootstrap_accordion(self):
         try:
-            del settings.CMSPLUGIN_CASCADE['bootstrap4']['template_basedir']
+            del app_settings.CMSPLUGIN_CASCADE['bootstrap4']['template_basedir']
         except KeyError:
             pass
         html = self.build_accordion_plugins()
@@ -73,7 +73,7 @@ class AccordionPluginTest(CascadeTestCase):
 
 #    @override_settings()
 #    def test_angular_bootstrap_accordion(self):
-#        settings.CMSPLUGIN_CASCADE['bootstrap4'].update({'template_basedir': 'angular-ui'})
+#        app_settings.CMSPLUGIN_CASCADE['bootstrap4'].update({'template_basedir': 'angular-ui'})
 #        html = self.build_accordion_plugins()
 #        soup = BeautifulSoup(html)
 #        accordion = soup.find('uib-accordion')

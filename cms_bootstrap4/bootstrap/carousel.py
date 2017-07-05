@@ -15,11 +15,12 @@ from django.forms.models import ModelForm
 
 from cms.plugin_pool import plugin_pool
 
+from cmsplugin_cascade import app_settings
 from cmsplugin_cascade.fields import GlossaryField
 from cmsplugin_cascade.forms import ManageChildrenFormMixin
 from cmsplugin_cascade.mixins import ImagePropertyMixin
 from cmsplugin_cascade.widgets import NumberInputWidget, MultipleCascadingSizeWidget
-from . import settings, utils
+from . import utils
 from .plugin_base import Bootstrap4PluginBase
 from .image import ImageForm, ImageAnnotationMixin
 from .picture import BootstrapPicturePlugin
@@ -60,11 +61,11 @@ class CarouselPlugin(Bootstrap4PluginBase):
     )
 
     container_max_heights = GlossaryField(
-        MultipleCascadingSizeWidget(list(tp[0] for tp in settings.CMSPLUGIN_CASCADE['bootstrap4']['breakpoints']),
+        MultipleCascadingSizeWidget(list(tp[0] for tp in app_settings.CMSPLUGIN_CASCADE['bootstrap4']['breakpoints']),
         allowed_units=['px']),
         label=_("Carousel heights"),
         initial=dict((bp[0], '{}px'.format(100 + 50 * i))
-            for i, bp in enumerate(settings.CMSPLUGIN_CASCADE['bootstrap4']['breakpoints'])),
+            for i, bp in enumerate(app_settings.CMSPLUGIN_CASCADE['bootstrap4']['breakpoints'])),
         help_text=_("Heights of Carousel in pixels for distinct Bootstrap's breakpoints."),
     )
 
