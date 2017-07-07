@@ -96,7 +96,7 @@ class BootstrapAccordionCardPlugin(TransparentContainer, Bootstrap4PluginBase):
     )
 
     class Media:
-        css = {'all': ('cascade/css/admin/bootstrap.min.css', 'cascade/css/admin/bootstrap-theme.min.css',)}
+        css = {'all': ('cascade-bs4/css/admin/bootstrap.min.css', 'cascade-bs4/css/admin/bootstrap-theme.min.css',)}
 
     @classmethod
     def get_identifier(cls, obj):

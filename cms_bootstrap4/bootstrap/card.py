@@ -78,7 +78,7 @@ class BootstrapCardPlugin(TransparentContainer, Bootstrap4PluginBase):
     html_parser = HTMLParser()
 
     class Media:
-        css = {'all': ('cascade/css/admin/bootstrap.min.css', 'cascade/css/admin/bootstrap-theme.min.css',)}
+        css = {'all': ('cascade-bs4/css/admin/bootstrap.min.css', 'cascade-bs4/css/admin/bootstrap-theme.min.css',)}
 
     def render(self, context, instance, placeholder):
         heading = self.html_parser.unescape(instance.glossary.get('heading', ''))

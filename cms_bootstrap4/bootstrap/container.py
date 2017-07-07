@@ -27,7 +27,7 @@ class ContainerBreakpointsRenderer(widgets.CheckboxFieldRenderer):
             format_html_join('',
                 '<div class="field-box">'
                     '<div class="container-thumbnail">'
-                        '<img src="' + settings.STATIC_URL + 'cascade/admin/{1}.svg" style="height: 55px;" />'
+                        '<img src="' + settings.STATIC_URL + 'cascade-bs4/admin/{1}.svg" style="height: 55px;" />'
                         '<div class="label">{0}</div>'
                     '</div>'
                 '</div>', ((force_text(w), BS4_BREAKPOINTS[w.choice_value][1]) for w in self)
