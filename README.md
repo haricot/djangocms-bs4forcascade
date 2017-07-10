@@ -80,7 +80,7 @@ CMSPLUGIN_CASCADE = {
     #             'extra_units:Margins': 'px,em',
     #         }
     #     ),
-    #     'BootstrapColumnPlugin': PluginExtraFieldsConfig(
+    #     'Bootstrap4ColumnPlugin': PluginExtraFieldsConfig(
     #         css_classes={'multiple': True, 'class_names': 'white'},
     #         inline_styles={
     #             'extra_fields:Height': ['height'],
