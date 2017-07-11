@@ -56,7 +56,7 @@ setup(
     author_email='np.pascal@gmail.com',
     url='https://github.com/haricot/djangocms-bs4forcascade/',
     packages=find_packages(),
-    install_requires=[],
+    install_requires=['djangocms-cascade>=0.13.0'],
     license='LICENSE-MIT',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
