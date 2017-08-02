@@ -19,10 +19,9 @@ from cmsplugin_cascade.fields import GlossaryField
 from .plugin_base import Bootstrap4PluginBase
 from .utils import compute_media_queries, get_widget_choices, BS4_BREAKPOINTS, BS4_BREAKPOINT_KEYS
 
-
-class ContainerBreakpointsRenderer(widgets.CheckboxFieldRenderer):
-    def render(self):
-
+class ContainerBreakpointsWidget(widgets.CheckboxSelectMultiple):
+    def render(self, name, value, attrs=None, renderer=None):
+        renderer = self.get_renderer(name, value, attrs)
         return format_html('<div class="form-row">{0}</div>',
             format_html_join('',
                 '<div class="field-box">'
@@ -30,7 +29,7 @@ class ContainerBreakpointsRenderer(widgets.CheckboxFieldRenderer):
                         '<img src="' + settings.STATIC_URL + 'cascade-bs4/admin/{1}.svg" style="height: 55px;" />'
                         '<div class="label">{0}</div>'
                     '</div>'
-                '</div>', ((force_text(w), BS4_BREAKPOINTS[w.choice_value][1]) for w in self)
+                '</div>', ((force_text(w), BS4_BREAKPOINTS[w.choice_value][1]) for w in renderer)
             ))
       
 
@@ -53,8 +52,7 @@ class Bootstrap4ContainerPlugin(Bootstrap4PluginBase):
     glossary_variables = ['container_max_widths', 'media_queries']
     glossary_field_order = ('breakpoints', 'fluid')
     breakpoints = GlossaryField(
-        widgets.CheckboxSelectMultiple(choices=get_widget_choices(),
-                                       renderer=ContainerBreakpointsRenderer),
+        ContainerBreakpointsWidget(choices=get_widget_choices()),
         label=_('Available Breakpoints'),
         initial=list(BS4_BREAKPOINTS)[::-1],
         help_text=_("Supported display widths for Bootstrap's grid system.")

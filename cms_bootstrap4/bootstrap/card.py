@@ -18,7 +18,7 @@ from .plugin_base import Bootstrap4PluginBase
 card_heading_sizes = (('', _("normal")),) + tuple(('h{}'.format(k), _("Heading {}").format(k)) for k in range(1, 7))
 
 
-class CardTypeRenderer(RadioFieldRenderer):
+class CardTypeWidget(widgets.RadioSelect):
     """
     Render sample buttons in different colors in the button's backend editor.
     """
@@ -27,16 +27,18 @@ class CardTypeRenderer(RadioFieldRenderer):
         ('card-danger', _("Danger")),))
 
     @classmethod
-    def get_widget(cls):
+    def get_instance(cls):
         choices = tuple((k, v) for k, v in cls.CARD_TYPES.items())
-        return widgets.RadioSelect(choices=choices, renderer=cls)
+        return cls(choices=choices)
 
-    def render(self):
+    def render(self, name, value, attrs=None, renderer=None):
+        renderer = self.get_renderer(name, value, attrs)
         return format_html('<div class="form-row">{}</div>',
             format_html_join('\n', '<div class="field-box"><div class="panel {1}">'
                 '<div class="panel-heading">{2}</div><div class="panel-body">{3}</div>'
                 '</div><div class="label">{0}</div></div>',
-                ((force_text(w), w.choice_value, force_text(self.CARD_TYPES[w.choice_value]), _("Content")) for w in self)
+                ((force_text(w), w.choice_value, force_text(self.PANEL_TYPES[w.choice_value]), _("Content"))
+                 for w in renderer)
             ))
 
 
@@ -54,7 +56,7 @@ class BootstrapCardPlugin(TransparentContainer, Bootstrap4PluginBase):
     glossary_field_order = ('card_type', 'heading_size', 'heading', 'footer')
 
     card_type = GlossaryField(
-        CardTypeRenderer.get_widget(),
+        CardTypeWidget.get_instance(),
         label=_("Card type"),
         help_text=_("Display Card using this style.")
     )

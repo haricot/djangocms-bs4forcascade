@@ -19,7 +19,7 @@ from cmsplugin_cascade.plugin_base import TransparentWrapper, TransparentContain
 from cmsplugin_cascade.widgets import NumberInputWidget
 
 from .plugin_base import Bootstrap4PluginBase
-from .card import card_heading_sizes, CardTypeRenderer
+from .card import card_heading_sizes, CardTypeWidget
 
 
 class AccordionForm(ManageChildrenFormMixin, ModelForm):
@@ -79,7 +79,7 @@ class BootstrapAccordionCardPlugin(TransparentContainer, Bootstrap4PluginBase):
     glossary_field_order = ('card_type', 'heading_size', 'card_title')
 
     card_type = GlossaryField(
-        CardTypeRenderer.get_widget(),
+        CardTypeWidget.get_instance(),
         label=_("Card type"),
         help_text=_("Display Card using this style.")
     )
