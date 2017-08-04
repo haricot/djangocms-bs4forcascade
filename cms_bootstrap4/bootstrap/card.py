@@ -34,10 +34,10 @@ class CardTypeWidget(widgets.RadioSelect):
     def render(self, name, value, attrs=None, renderer=None):
         renderer = self.get_renderer(name, value, attrs)
         return format_html('<div class="form-row">{}</div>',
-            format_html_join('\n', '<div class="field-box"><div class="panel {1}">'
-                '<div class="panel-heading">{2}</div><div class="panel-body">{3}</div>'
+            format_html_join('\n', '<div class="field-box"><div class="card {1}">'
+                '<div class="card-header">{2}</div><div class="card-block">{3}</div>'
                 '</div><div class="label">{0}</div></div>',
-                ((force_text(w), w.choice_value, force_text(self.PANEL_TYPES[w.choice_value]), _("Content"))
+                ((force_text(w), w.choice_value, force_text(self.CARD_TYPES[w.choice_value]), _("Content"))
                  for w in renderer)
             ))
 
