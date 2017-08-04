@@ -32,17 +32,17 @@ class ButtonTypeWidget(widgets.RadioSelect):
     def render(self, name, value, attrs=None, renderer=None):
         renderer = self.get_renderer(name, value, attrs)
         return format_html('<div class="form-row">{}</div>',
-            format_html_join('\n', '<div class="field-box">'
-                             '<span class="btn {1}">{2}</span>'
-                             '<div class="label">{0}</div></div>',
-                             ((force_text(w), w.choice_value, force_text(self.BUTTON_SIZES[w.choice_value])) for w in renderer)))
+            format_html_join('\n',
+                '<div class="field-box"><span class="btn {1}">{2}</span><div class="label">{0}</div></div>',
+                ((force_text(w), w.choice_value, force_text(self.BUTTON_TYPES[w.choice_value])) for w in renderer)))
 
 
 class ButtonSizeWidget(widgets.RadioSelect):
     """
     Render sample buttons in different sizes in the button's backend editor.
     """
-    BUTTON_SIZES = OrderedDict((('btn-lg', _("Large")), ('', _("Default")), ('btn-sm', _("Small")),))
+    BUTTON_SIZES = OrderedDict((('btn-lg', _("Large")), ('', _("Default")), ('btn-sm', _("Small")),
+        ('btn-xs', _("Extra small")),))
 
     @classmethod
     def get_instance(cls):
