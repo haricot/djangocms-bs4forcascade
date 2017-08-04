@@ -41,8 +41,7 @@ class ButtonSizeWidget(widgets.RadioSelect):
     """
     Render sample buttons in different sizes in the button's backend editor.
     """
-    BUTTON_SIZES = OrderedDict((('btn-lg', _("Large")), ('', _("Default")), ('btn-sm', _("Small")),
-        ('btn-xs', _("Extra small")),))
+    BUTTON_SIZES = OrderedDict((('btn-lg', _("Large")), ('', _("Default")), ('btn-sm', _("Small")),))
 
     @classmethod
     def get_instance(cls):
