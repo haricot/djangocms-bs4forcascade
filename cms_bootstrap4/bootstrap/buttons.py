@@ -22,7 +22,10 @@ class ButtonTypeWidget(widgets.RadioSelect):
     """
     BUTTON_TYPES = OrderedDict((('btn-primary', _("Primary")), ('btn-secondary', _("Secondary")),
         ('btn-success', _("Success")), ('btn-info', _("Info")), ('btn-warning', _("Warning")),
-        ('btn-danger', _("Danger")), ('btn-link', _("Link")),))
+        ('btn-danger', _("Danger")), ('btn-link', _("Link")),
+        ('btn-outline-primary', _("Outline Primary")), ('btn-outline-secondary', _("Outline Secondary")),
+        ('btn-outline-success', _("Outline Success")), ('btn-outline-info', _("Outline Info")), 
+        ('btn-outline-warning', _("Outline Warning")), ('btn-outline-danger', _("Outline Danger")),))
 
     @classmethod
     def get_instance(cls):
