@@ -8,7 +8,7 @@ from django.core.exceptions import ImproperlyConfigured
 from django.utils.translation import ugettext_lazy as _
 
 CASCADE_PLUGINS = ['buttons', 'carousel', 'accordion', 'container', 'image', 'picture',
-                   'card', 'tabs', 'gallery', 'jumbotron']
+                   'card', 'tabs', 'gallery', 'jumbotron', 'modal']
 
 if 'cms_bootstrap4' in settings.INSTALLED_APPS:
     CASCADE_PLUGINS.append('secondary_menu')
@@ -30,6 +30,11 @@ def set_defaults(config):
             raise ImproperlyConfigured(msg.format(tpl[0]))
 
     config['bootstrap4'].setdefault('gutter', 30)
+
+    config['plugins_with_bookmark'] = list(config.get('plugins_with_bookmark', []))
+    config['plugins_with_bookmark'].extend(['BootstrapModalPlugin'])
+    config.setdefault('bookmark_prefix', '')
+
 
     config['plugins_with_extra_render_templates'].setdefault('BootstrapSecondaryMenuPlugin', (
         ('cascade/bootstrap4/secmenu-list-group.html', _("default")),

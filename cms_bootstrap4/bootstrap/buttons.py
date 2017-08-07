@@ -86,9 +86,10 @@ class BootstrapButtonMixin(IconPluginMixin):
         help_text=_("Display Link using this Button Size")
     )
 
-    button_options = GlossaryField(
-        widgets.CheckboxSelectMultiple(choices=(('btn-block', _('Block level')), ('disabled', _('Disabled')),)),
-        label=_("Button Options"),
+    button_modal = GlossaryField(
+        widgets.CheckboxInput(),
+        label=_("Button Modal"),
+        help_text=_("Attributes for use modal"),
     )
 
 #Added .float-{sm,md,lg,xl}-{left,right,none} classes for responsive floats and removed .pull-left and .pull-right since they’re redundant to .float-left and .float-right.
@@ -125,6 +126,9 @@ class BootstrapButtonMixin(IconPluginMixin):
         context = super(BootstrapButtonMixin, self).render(context, instance, placeholder)
         icon_font = self.get_icon_font(instance)
         symbol = instance.glossary.get('symbol')
+        modal = instance.glossary.get('button_modal') == 'on'
+        if modal:
+            context['is_modal']=modal
         if icon_font and symbol:
             context['stylesheet_url'] = icon_font.get_stylesheet_url()
             mini_template = '{0}<i class="icon-{1} {2}" aria-hidden="true"></i>{3}'
@@ -141,8 +145,8 @@ class Bootstrap4ButtonPlugin(BootstrapButtonMixin, LinkPluginBase):
     name = _("Button")
     model_mixins = (LinkElementMixin,)
     fields = ('link_content',) + LinkPluginBase.fields
-    glossary_field_order = ('button_type', 'button_size', 'button_options', 'quick_float',
-                            'icon_align', 'icon_font', 'symbol')
+    glossary_field_order = ('button_type', 'button_size', 'button_options','quick_float',
+                           'icon_align', 'icon_font', 'symbol','button_modal',)
     ring_plugin = 'ButtonPlugin'
 
     class Media:
