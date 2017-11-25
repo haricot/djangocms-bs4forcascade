@@ -5,11 +5,11 @@ Currently with bootstrap v4.0.0-alpha.6
 Some templates and templatetags to be used with djangoCMS and Bootstrap4 with plugins for djangocms-casacde.
 
 ### how use this :
-As in the example / bs3demo of djangocms-cascade it is to put this below in the settings.py files:
+As in the example / bs3demo of djangocms-cascade it is to put in the settings.py files:
 ```
 INSTALLED_APPS = (
 ...
-    'cmsplugin_bs4forcasade',
+    'cms_bootstrap4',
 ...
 )
 ```
@@ -17,7 +17,7 @@ INSTALLED_APPS = (
 ```
 CMSPLUGIN_CASCADE_PLUGINS = (
 ..
-'cmsplugin_bs4forcasade.bootstrap4',
+'cms_bootstrap4.bootstrap',
 ..
 )
 ```
@@ -73,6 +73,23 @@ CMSPLUGIN_CASCADE = {
         'BootstrapButtonPlugin': ('button_type', 'button_size', 'button_options', 'icon_font',),
         'TextLinkPlugin': ('link', 'target',),
     },
+    # 'plugins_with_extra_fields': {
+    #     'Bootstrap4RowPlugin': PluginExtraFieldsConfig(
+    #         inline_styles={
+    #             'extra_fields:Margins': ['margin-top', 'margin-bottom'],
+    #             'extra_units:Margins': 'px,em',
+    #         }
+    #     ),
+    #     'Bootstrap4ColumnPlugin': PluginExtraFieldsConfig(
+    #         css_classes={'multiple': True, 'class_names': 'white'},
+    #         inline_styles={
+    #             'extra_fields:Height': ['height'],
+    #             'extra_units:Height': 'px',
+    #             'extra_fields:Paddings': ['padding-top', 'padding-right', 'padding-bottom', 'padding-left'],
+    #             'extra_units:Paddings': 'px,em',
+    #         }
+    #     ),
+    # },
     'exclude_hiding_plugin': ('SegmentPlugin', 'Badge'),
     'bootstrap4': {},
     'allow_plugin_hiding': True,
@@ -88,4 +105,4 @@ CMSPLUGIN_CASCADE['bootstrap3'] to CMSPLUGIN_CASCADE['bootstrap4']
 
 ## CHANGELOG
 
-- 0.15.2v2bs4 Initial release.
+- 0.0.2 Initial release.
