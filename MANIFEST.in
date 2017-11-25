@@ -1,8 +1,8 @@
 include LICENSE-MIT
 include README.md
 include setup.py
-recursive-include cmsplugin_cascade/locale *
-recursive-include cmsplugin_cascade/static *
-recursive-include cmsplugin_cascade/templates *
-recursive-include cmsplugin_cascade *.py
+recursive-include cmsplugin_bs4forcascade/locale *
+recursive-include cmsplugin_bs4forcascade/static *
+recursive-include cmsplugin_bs4forcascade/templates *
+recursive-include cmsplugin_bs4forcascade *.py
 recursive-exclude tests *

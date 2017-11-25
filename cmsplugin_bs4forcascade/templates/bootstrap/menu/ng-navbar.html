@@ -1,0 +1,23 @@
+{% load bootstrap_tags %}
+{% for child in children %}
+<li class="nav-item {% if child.selected or child.ancestor %}active{% endif %}{% if child.children %} dropdown{% endif %}">
+	{% if child.children %}
+	<a href="{{ child.get_absolute_url }}" class="nav-link link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ child.get_menu_title }} </a>
+	<div class="dropdown-menu">
+		{% if child.visible %} 
+		<a  class="dropdown-item" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}"  ><strong>{{ child.get_menu_title }}</strong></a>
+		<div class="dropdown-divider"></div>
+		{% endif %}
+		{% comment %}
+		Bootsrap4 does not support submenues, This feature was purposefully removed by Creator of Bootstrap as he feels 
+		that submenus aren't great UX, particularly on mobile. so levels > 1 can't be handled be the main_menu tag and therfore
+		recursion has been dropped intentionally https://github.com/twbs/bootstrap/issues/16387
+		{% endcomment %}
+		{% for grandchild in child.children %}
+		<a {% if grandchild.selected %}{% endif %} class="dropdown-item" href="{{ grandchild.attr.redirect_url|default:grandchild.get_absolute_url }}">{{ grandchild.get_menu_title }}</a>
+		{% endfor %}
+	{% else %}
+	<a class="nav-link" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">{{ child.get_menu_title }}<span class="sr-only">(current)</span></a>
+{% endif %}
+</li>
+{% endfor %}

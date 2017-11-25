@@ -1,0 +1,21 @@
+{% load bootstrap_tags i18n %}
+{# navbar_classes="navbar-expand-md navbar-light fixed-top  bg-faded" %} #}
+<nav class="navbar {{ navbar_classes }}" role="navigation">
+{% block navbar %}
+	<div class="container">
+		<a class="navbar-brand" href="#">Fixed navbar</a>
+	{% block navbar-header %}
+			<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="sr-only">{% trans "Toggle navigation" %}</span>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	{% endblock %}
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+	{% block navbar-nav %}
+			<ul class="navbar-nav mr-auto">{% main_menu %}</ul>
+	{% endblock %}
+		</div>
+	</div>
+{% endblock navbar %}
+</nav>
+ 

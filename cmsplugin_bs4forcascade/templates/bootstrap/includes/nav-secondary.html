@@ -1,0 +1,12 @@
+{% load menu_tags i18n %}
+{% get_available_languages as languages %}
+{# <nav class="secondary navbar navbar-toggleable-md navbar-light bg-faded" > #}
+<nav class="secondary {{ navbar_classes }}" >
+	 <div id="app" class="container">
+		<ul class="navbar-nav ml-auto">
+{% if languages|length > 1 %}{% language_chooser "bootstrap/includes/language-chooser.html" %}{% endif %}
+			<li class="nav-item" ><a class="nav-link"  href="#">{% trans "Customer Account" %}</a></li>
+		</ul>
+ </div>
+</nav>
+

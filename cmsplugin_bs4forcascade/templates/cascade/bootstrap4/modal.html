@@ -1,0 +1,22 @@
+{% load cms_tags %}{% spaceless %}
+{% with inline_styles=instance.inline_styles element_id=instance.element_id %}
+
+<div class="modal  {{ modal_type }} {{ instance.css_classes }}" tabindex="-1" role="dialog"  aria-hidden="true" {% if element_id %} id="{{ element_id }}" {% endif %}>
+<div class="modal-dialog  {% if  modal_size != 'modal-xl' %} {{ modal_size }} {% endif %}"  {% if  modal_size == 'modal-xl' %}  style="max-width:80%;"{% endif %} role="document">
+<div class="modal-content" style="{% if inline_styles %}{{ inline_styles }} {% endif %}  {% if background_color_rgba %}  background-color:{{ background_color_rgba }} !important; {% endif %} " >
+{% if modal_heading %}<div class="modal-header"  style="{% if border_color_header_footer %}  border-color:{{ border_color_header_footer }} !important; {% endif %}">{% if heading_size %}<{{ heading_size }} class="modal-title">{% endif %}{{ modal_heading|safe }}{% if heading_size %}</{{ heading_size }}>{% endif %}<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>{% endif %}
+<div class="modal-body">
+{% for child in instance.child_plugin_instances %}{% render_plugin child %}{% endfor %}
+</div>
+{% if modal_footer %}<div class="modal-footer" style="{% if border_color_header_footer %}  border-color:{{ border_color_header_footer }} !important; {% endif %}" >{{ modal_footer|safe }}</div>{% endif %}
+</div>
+  </div>
+</div>
+
+
+
+
+
+
+{% endwith %}{% endspaceless %}
+ 
