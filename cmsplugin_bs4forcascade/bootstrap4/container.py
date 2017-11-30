@@ -269,7 +269,10 @@ class Bootstrap4ColumnPlugin(BootstrapPluginBase):
                 help_text=help_text))
 
             # handle responsive utilies
-            choices = (('', _("Default")), ('visible-{}'.format(bp), _("Visible")), ('d-{}-none'.format(bp), _("Hidden")),)
+            if bp=='xs':
+                choices = (('', _("Default")), ('d-block', _("Visible")), ('d-none', _("Hidden")),)
+            else:
+                choices = (('', _("Default")), ('d-{}-block'.format(bp), _("Visible")), ('d-{}-none'.format(bp), _("Hidden")),)
             label = _("Responsive utilities for {}").format(devices)
             help_text = chose_help_text(
                 _("Utility classes for showing and hiding content by devices narrower than {} pixels."),
