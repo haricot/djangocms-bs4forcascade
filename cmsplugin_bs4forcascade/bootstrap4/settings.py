@@ -7,6 +7,7 @@ from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
 from django.utils.translation import ugettext_lazy as _
 
+from cmsplugin_cascade.extra_fields.config import PluginExtraFieldsConfig
 
 CASCADE_PLUGINS = getattr(settings, 'BS4_CASCADE_PLUGINS',
     ['buttons', 'carousel', 'accordion', 'container', 'image', 'picture','card',
@@ -32,6 +33,15 @@ def set_defaults(config):
 
     config['bootstrap4'].setdefault('gutter', 30)
 
+    config['plugins_with_extra_fields'].setdefault('Bootstrap4ButtonPlugin', PluginExtraFieldsConfig())
+    config['plugins_with_extra_fields'].setdefault('Bootstrap4RowPlugin', PluginExtraFieldsConfig())
+    config['plugins_with_extra_fields'].setdefault('BootstrapJumbotronPlugin', PluginExtraFieldsConfig(
+        inline_styles={
+            'extra_fields:Paddings': ['margin-top', 'margin-bottom', 'padding-top', 'padding-bottom'],
+            'extra_units:Paddings': 'px,em'
+        }
+    ))
+    
     config['plugins_with_extra_render_templates'].setdefault('BootstrapSecondaryMenuPlugin', (
         ('cascade/bootstrap4/secmenu-list-group.html', _("List Group")),
         ('cascade/bootstrap4/secmenu-unstyled-list.html', _("Unstyled List")),))
