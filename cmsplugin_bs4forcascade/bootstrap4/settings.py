@@ -7,7 +7,6 @@ from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
 from django.utils.translation import ugettext_lazy as _
 
-from cmsplugin_cascade.extra_fields.config import PluginExtraFieldsConfig
 
 CASCADE_PLUGINS = getattr(settings, 'BS4_CASCADE_PLUGINS',
     ['buttons', 'carousel', 'accordion', 'container', 'image', 'picture','card',
