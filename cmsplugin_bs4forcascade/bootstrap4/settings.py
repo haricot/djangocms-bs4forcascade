@@ -8,8 +8,10 @@ from django.core.exceptions import ImproperlyConfigured
 from django.utils.translation import ugettext_lazy as _
 
 
-CASCADE_PLUGINS = ['buttons', 'carousel', 'accordion', 'container', 'image', 'picture',
-                   'card', 'tabs', 'gallery', 'jumbotron']
+CASCADE_PLUGINS = getattr(settings, 'BS4_CASCADE_PLUGINS',
+    ['buttons', 'carousel', 'accordion', 'container', 'image', 'picture','card',
+     'tabs', 'gallery', 'jumbotron'],)
+
 if 'cmsplugin_bs4forcascade' in settings.INSTALLED_APPS:
     CASCADE_PLUGINS.append('secondary_menu')
 
