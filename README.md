@@ -23,29 +23,21 @@ CMSPLUGIN_CASCADE_PLUGINS = (
 )
 ```
 
-```
-CMSPLUGIN_CASCADE = {
-    'alien_plugins': ('TextPlugin', 'TextLinkPlugin',),
-    'plugins_with_sharables': {
-        'BootstrapImagePlugin': ('image_shapes', 'image_width_responsive', 'image_width_fixed',
-                                 'image_height', 'resize_options',),
-        'BootstrapPicturePlugin': ('image_shapes', 'responsive_heights', 'image_size', 'resize_options',),
-        'BootstrapButtonPlugin': ('button_type', 'button_size', 'button_options', 'icon_font',),
-        'TextLinkPlugin': ('link', 'target',),
-    },
-    'exclude_hiding_plugin': ('SegmentPlugin', 'Badge'),
-    'bootstrap4': {},
-    'allow_plugin_hiding': True,
-}
 
-```
-
-
-```
 
 And replace :
 ```
 CMSPLUGIN_CASCADE['bootstrap3'] to CMSPLUGIN_CASCADE['bootstrap4']
+```
+
+And replace :
+
+```
+'BootstrapContainerPlugin' to 'Bootstrap4ContainerPlugin'
+'BootstrapRowPlugin' to 'Bootstrap4RowPlugin'
+'BootstrapColumnPlugin' to 'Bootstrap4ColumnPlugin'
+'BootstrapButtonPlugin' to 'Bootstrap4ButtonPlugin'
+
 ```
 
 ## CHANGELOG
