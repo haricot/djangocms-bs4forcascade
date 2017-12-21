@@ -117,7 +117,7 @@ class BootstrapRowForm(ManageChildrenFormMixin, ModelForm):
 class Bootstrap4RowPlugin(BootstrapPluginBase):
     name = _("Row")
     default_css_class = 'row'
-    parent_classes = ('Bootstrap4ContainerPlugin', 'Bootstrap4ColumnPlugin',)
+    parent_classes = ('Bootstrap4ContainerPlugin', 'Bootstrap4ColumnPlugin', 'BootstrapJumbotronPlugin')
     form = BootstrapRowForm
     fields = ('num_children', 'glossary',)
 
