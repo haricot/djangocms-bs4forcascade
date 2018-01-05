@@ -21,11 +21,12 @@ def set_defaults(config):
     config.setdefault('bootstrap4', {})
     config['bootstrap4'].setdefault(
         'breakpoints', (
-            ('xs', (0, 'mobile', _("mobile phones"), 0, 542)),
-            ('sm', (576, 'phablet', _("phablets"), 544, 767)),
+            ('xs', (575, 'mobile', _("mobile phones"), 560, 575)),
+            ('sm', (576, 'phablet', _("phablets"), 576, 767)),
             ('md', (768, 'tablet', _("tablets"), 768, 991)),
             ('lg', (992, 'laptop', _("laptops"), 992, 1199)),
             ('xl', (1200, 'desktop', _("large desktops"), 1200, 1980)),))
+
     for tpl in config['bootstrap4']['breakpoints']:
         if len(tpl[1]) != 5:
             msg = "The configuration directive CMSPLUGIN_CASCADE['bootstrap4']['bootstrap4']['{}'] requires 5 parameters"
