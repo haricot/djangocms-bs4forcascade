@@ -159,8 +159,8 @@ def set_defaults(options):
     options.setdefault('container_max_widths', {'xs': 542, 'sm': 767, 'md': 991, 'lg': 1199, 'xl': 1980})
     options.setdefault('fluid', False)
     options.setdefault('media_queries', {
-        'xs': ['(max-width: 542px)'],
-        'sm': ['(min-width: 544px)', '(max-width: 767px)'],
+        'xs': ['(max-width: 575px)'],
+        'sm': ['(min-width: 576px)', '(max-width: 767px)'],
         'md': ['(min-width: 768px)', '(max-width: 991px)'],
         'lg': ['(min-width: 992px)','(max-width: 1199px)'],
         'xl': ['(min-width: 1200px)'],
