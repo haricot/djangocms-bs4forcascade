@@ -156,10 +156,10 @@ def get_image_tags(context, instance, options):
 
 def set_defaults(options):
     options.setdefault('breakpoints', ['xs', 'sm', 'md', 'lg', 'xl'])
-    options.setdefault('container_max_widths', {'xs': 542, 'sm': 767, 'md': 991, 'lg': 1199, 'xl': 1980})
+    options.setdefault('container_max_widths', {'xs': 576, 'sm': 767, 'md': 991, 'lg': 1199, 'xl': 1980})
     options.setdefault('fluid', False)
     options.setdefault('media_queries', {
-        'xs': ['(max-width: 575px)'],
+        'xs': ['(max-width: 576px)'],
         'sm': ['(min-width: 576px)', '(max-width: 767px)'],
         'md': ['(min-width: 768px)', '(max-width: 991px)'],
         'lg': ['(min-width: 992px)','(max-width: 1199px)'],
