@@ -161,7 +161,7 @@ class Bootstrap4ButtonPlugin(BootstrapButtonMixin, LinkPluginBase):
     model_mixins = (LinkElementMixin,)
     fields = ('link_content',) + LinkPluginBase.fields
     glossary_field_order = ('button_type', 'button_size', 'button_options', 'quick_float',
-                            'icon_align', 'icon_font', 'symbol')
+                            'target', 'title', 'icon_align', 'icon_font', 'symbol')
     ring_plugin = 'ButtonPlugin'
 
     class Media:
