@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 
 import json
 
+from cms.toolbar.utils import get_toolbar_from_request
 from django import template
 from django.core.cache import caches
 from django.template.exceptions import TemplateSyntaxError
@@ -65,13 +66,23 @@ class RenderPlugin(Tag):
     def render_tag(self, context, plugin):
         if not plugin:
             return ''
-
-        content_renderer = context['cms_content_renderer']
-        content = content_renderer.render_plugin(
-            instance=plugin,
-            context=context,
-            editable=content_renderer.user_is_on_edit_mode(),
-        )
+        
+        try:
+            content_renderer = context['cms_content_renderer']
+            content = content_renderer.render_plugin(
+                instance=plugin,
+                context=context,
+                editable=content_renderer.user_is_on_edit_mode(),
+            )
+        except KeyError:
+            toolbar = get_toolbar_from_request(context['request'])
+            content_renderer = toolbar.content_renderer
+            content = content_renderer.render_plugin(
+                instance=plugin,
+                context=context,
+                editable=toolbar.edit_mode_active,
+            )
         return content
+
 
 register.tag('render_plugin', RenderPlugin)
