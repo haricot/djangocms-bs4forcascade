@@ -1,6 +1,6 @@
-{% load cms_tags %}
-
-{% with bootstrap_element="carousel" inline_styles=instance.inline_styles %}
+{% load l10n cascade_tags %}
+{% localize off %}{% spaceless %}
+	{% with bootstrap_element="carousel" inline_styles=instance.inline_styles %}
 <div id="cmsplugin_{{ instance.id }}" class="{{ instance.css_classes }}"{% if inline_styles %} style="{{ inline_styles }}"{% endif %} {{ instance.html_tag_attributes }}>
 	<ol class="carousel-indicators">
 	{% for slide in instance.child_plugin_instances %}
@@ -21,4 +21,5 @@
 		<span class="carousel-control-next-icon" aria-hidden="true"></span>
 	</a>
 </div>
-{% endwith %}
+	{% endwith %}
+{% endspaceless %}{% endlocalize %}
