@@ -1,7 +1,7 @@
-{% load cms_tags %}
+{% load l10n cascade_tags %}
 
-{% spaceless %}
-{% with inline_styles=instance.inline_styles %}
+{% localize off %}{% spaceless %}
+	{% with inline_styles=instance.inline_styles %}
 <div id="cmsplugin_{{ instance.id }}" class="{{ instance.css_classes }}"{% if inline_styles %} style="{{ inline_styles }}"{% endif %} role="tablist"  aria-multiselectable="true">
 	{% for card in instance.child_plugin_instances %}
 		{% with card_type=card.glossary.card_type heading_tag=card.glossary.heading_size|default:"div" card_title=card.glossary.card_title|safe %}
@@ -20,5 +20,5 @@
 		{% endwith %}
 	{% endfor %}
 </div>
-{% endwith %}{% endspaceless %}
- 
+	{% endwith %}
+{% endspaceless %}{% endlocalize %}
