@@ -7,6 +7,6 @@
 		{% thumbnail instance.image srcset.size crop=srcset.crop upscale=srcset.upscale subject_location=instance.image.subject_location as thumb %}{{ thumb.url }} {{ key }}{% if not forloop.last %},{% endif %}
 	{% endfor %}"
 	{% thumbnail instance.image src.size crop=src.crop upscale=src.upscale subject_location=instance.image.subject_location as thumb %}
-	src="{{ thumb.url }}"{% if not sizes %} width="{{ thumb.width|unlocalize }}" height="{{ thumb.height|unlocalize }}"{% endif %} />
-{% endwith %}
+	src="{{ thumb.url }}"{% if not sizes %} width="{{ thumb.width }}" height="{{ thumb.height }}"{% endif %} />
+	{% endwith %}
 {% endspaceless %}{% endlocalize %}
