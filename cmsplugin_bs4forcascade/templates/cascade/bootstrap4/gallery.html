@@ -1,5 +1,6 @@
-{% load static thumbnail l10n %}{% spaceless %}
-{% with css_classes=instance.css_classes inline_styles=instance.inline_styles %}
+{% load l10n static thumbnail %}
+{% localize off %}{% spaceless %}
+	{% with css_classes=instance.css_classes inline_styles=instance.inline_styles %}
 <div{% if inline_styles %} style="{{ inline_styles }}"{% endif %}>
 	{% for instance in gallery_instances %}
 	<img {% if instance.sizes %}sizes="{{ instance.sizes|join:', ' }}"{% endif %}
@@ -19,5 +20,5 @@ HTML snippets are wellcommed.
 <div style="width: 500px;">{% thumbnail gallery_instances.0.image 1665x1665 as thumb %}
 	<div image-src="{{ thumb.url }}" image-zoom zoom-factor="2.5"></div>
 </div>
-{% endwith %}
-{% endspaceless %}
+	{% endwith %}
+{% endspaceless %}{% endlocalize %}
