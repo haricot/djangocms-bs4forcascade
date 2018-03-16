@@ -44,7 +44,7 @@ setup(
     license='LICENSE-MIT',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
-    long_description=convert('README.md', 'rst'),
+    #long_description=convert('README.md', 'rst'),
     include_package_data=True,
     zip_safe=False,
 )
