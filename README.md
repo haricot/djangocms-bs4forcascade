@@ -1,48 +1,34 @@
 djangocms-bs4forcascade     
 ================================================================================================================================
+djangocms-bs4forcascade is very similar to [jrief/djangocms-cascade](https://github.com/jrief/djangocms-cascade/), the code has been adapted for bootstrap 4,
 
-Currently with bootstrap v4.0.0-beta2
+Currently with bootstrap v4.1.1
 
 Some templates and templatetags to be used with djangoCMS and Bootstrap4 with plugins for djangocms-casacde.
 
-### how use djangocms-bs4forcascade :
-As in the bs3demo/example of djangocms-cascade, you have to modify the settings.py file like this:
-
-```
-INSTALLED_APPS = (
-...
-    'cmsplugin_bs4forcascade',
-...
-)
-```
-
-```
-CMSPLUGIN_CASCADE_PLUGINS = (
-..
-'cmsplugin_bs4forcascade.bootstrap4',
-..
-)
-```
 
 
+### How use djangocms-bs4forcascade :
+As in the examples/bs3demo of [jrief/djangocms-cascade](https://github.com/jrief/djangocms-cascade/) of , bs4demo is very similar:
 
-And replace :
-```
-CMSPLUGIN_CASCADE['bootstrap3'] to CMSPLUGIN_CASCADE['bootstrap4']
-```
-
-And replace :
 
 ```
-'BootstrapContainerPlugin' to 'Bootstrap4ContainerPlugin'
-'BootstrapRowPlugin' to 'Bootstrap4RowPlugin'
-'BootstrapColumnPlugin' to 'Bootstrap4ColumnPlugin'
-'BootstrapButtonPlugin' to 'Bootstrap4ButtonPlugin'
+$ git clone --depth=1 https://github.com/haricot/djangocms-bs4forcascade
+$ cd djangocms-bs4forcascade
+$ virtualenv cascadenv
+$ source cascadenv/bin/activate
+(cascadenv)$ pip install -r requirements/django111.txt
+```
 
 ```
+$ cd examples
+$ npm install
+$ ./manage.py migrate
+$ ./manage.py createsuperuser
+$ ./manage.py runserver
+```
+
 
 ## CHANGELOG
 
-- 0.15.4v2bs4 Update release. 
-- 0.15.3v2bs4 Initial release.
-
+- 0.16_bs4 Update release.
