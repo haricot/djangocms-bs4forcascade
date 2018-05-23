@@ -9,7 +9,7 @@ Some templates and templatetags to be used with djangoCMS and Bootstrap4 with pl
 
 
 ### How use djangocms-bs4forcascade :
-As in the examples/bs3demo of [jrief/djangocms-cascade](https://github.com/jrief/djangocms-cascade/) of , bs4demo is very similar:
+As in the examples/bs3demo of [jrief/djangocms-cascade](https://github.com/jrief/djangocms-cascade/), bs4demo is very similar:
 
 
 ```
