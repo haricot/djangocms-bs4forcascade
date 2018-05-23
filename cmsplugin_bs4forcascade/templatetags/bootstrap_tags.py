@@ -56,10 +56,13 @@ class MainMenu(InclusionTag):
         StringArgument('template', default='bootstrap/menu/navbar.html', required=False),
         StringArgument('namespace', default=None, required=False),
         StringArgument('root_id', default=None, required=False),
+        IntegerArgument('offset', default=0, required=False),
+        IntegerArgument('limit', default=100, required=False),
         Flag('embody_root', default=False, true_values=['embody_root']),
+        Argument('next_page', default=None, required=False),
     )
 
-    def get_context(self, context, template, namespace, root_id, embody_root):
+    def get_context(self, context, template, namespace, root_id, offset, limit, embody_root):
         try:
             # If there's an exception (500), default context_processors may not be called.
             request = context['request']
@@ -67,29 +70,34 @@ class MainMenu(InclusionTag):
             return {'template': 'menu/empty.html'}
 
         start_level = 0
-        menu_renderer = context.get('cms_menu_renderer')
         
-        if not menu_renderer:
-            menu_renderer = menu_pool.get_renderer(request)
+        if next_page:
+            children = next_page.children
+        else:
+            menu_renderer = context.get('cms_menu_renderer')
         
-        nodes = menu_renderer.get_nodes(namespace, root_id)
-        if root_id:
-            # find the root id and cut the nodes
-            id_nodes = menu_pool.get_nodes_by_attribute(nodes, "reverse_id", root_id)
-            if id_nodes:
-                node = id_nodes[0]
-                nodes = node.children
-                for remove_parent in nodes:
-                    remove_parent.parent = None
-                start_level = node.level + 1
-                nodes = flatten(nodes)
-                if embody_root:
-                    node.level = start_level
-                    nodes.insert(0, node)
-            else:
-                nodes = []
-        children = cut_levels(nodes, start_level)
-        children = menu_renderer.apply_modifiers(children, namespace, root_id, post_cut=True)
+            if not menu_renderer:
+                menu_renderer = menu_pool.get_renderer(request)
+        
+            nodes = menu_renderer.get_nodes(namespace, root_id)
+            if root_id:
+                # find the root id and cut the nodes
+                id_nodes = menu_pool.get_nodes_by_attribute(nodes, "reverse_id", root_id)
+                if id_nodes:
+                    node = id_nodes[0]
+                    nodes = node.children
+                    for remove_parent in nodes:
+                        remove_parent.parent = None
+                    start_level = node.level + 1
+                    nodes = flatten(nodes)
+                    if embody_root:
+                        node.level = start_level
+                        nodes.insert(0, node)
+                else:
+                    nodes = []
+            children = cut_levels(nodes, start_level)
+            children = menu_renderer.apply_modifiers(children, namespace, root_id, post_cut=True)
+            children = children[offset:offset + limit]
         context.update({'children': children, 'template': template})
         return context
 
@@ -101,8 +109,11 @@ class MainMenuBelowId(MainMenu):
     options = Options(
         Argument('root_id', default=None, required=False),
         StringArgument('template', default='bootstrap/menu/navbar.html', required=False),
+        IntegerArgument('offset', default=0, required=False),
+        IntegerArgument('limit', default=100, required=False),
         StringArgument('namespace', default=None, required=False),
         Flag('embody_root', default=False, true_values=['embody_root']),
+        Argument('next_page', default=None, required=False),
     )
 
 register.tag(MainMenuBelowId)
@@ -113,8 +124,11 @@ class MainMenuEmbodyId(MainMenu):
     options = Options(
         Argument('root_id', default=None, required=False),
         StringArgument('template', default='bootstrap/menu/navbar.html', required=False),
+        IntegerArgument('offset', default=0, required=False),
+        IntegerArgument('limit', default=100, required=False),
         StringArgument('namespace', default=None, required=False),
         Flag('embody_root', default=True, false_values=['skip_root']),
+        Argument('next_page', default=None, required=False),
     )
 
 register.tag(MainMenuEmbodyId)
