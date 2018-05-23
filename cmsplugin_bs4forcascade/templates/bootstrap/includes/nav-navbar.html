@@ -1,5 +1,4 @@
 {% load bootstrap_tags i18n %}
-{# navbar_classes="navbar-expand-md navbar-light fixed-top  bg-faded" %} #}
 <nav class="navbar {{ navbar_classes }}" role="navigation">
 {% block navbar %}
 	<div class="container">
@@ -10,12 +9,15 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 	{% endblock %}
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-	{% block navbar-nav %}
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+	{% block navbar-nav %} 
 			<ul class="navbar-nav mr-auto">{% main_menu %}</ul>
+				<button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+					<div class="close-icon"></div>
+				</button>
 	{% endblock %}
 		</div>
-	</div>
+ 	</div>
 {% endblock navbar %}
 </nav>
  

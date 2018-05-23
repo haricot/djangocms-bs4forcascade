@@ -23,13 +23,13 @@
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-4">
+				<div class="col-4">
 					<h3>About</h3>
 					<p>Lorem Ipsum</p>
 					<p>Incididunt ut labore</p>
 					<p>Quis nostrud exercitat</p>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-4">
 					<h3>Services</h3>
 					<p>Conse ctetur adipisicing</p>
 					<p>Elit sed do eiusmod tempor</p>
@@ -47,7 +47,8 @@
 	</script>
 	{% else %}
 	<script src="{% static 'node_modules/jquery/dist/jquery.min.js' %}" type="text/javascript"></script>
-	<script src="{% static 'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js' %}" type="text/javascript"></script>
+	<script src="{% static 'node_modules/popper.js/dist/umd/popper.js' %}" type="text/javascript"></script>
+	<script src="{% static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}" type="text/javascript"></script>
 	{% endif %}
 	{% render_block "js" %}
 </body>

@@ -39,7 +39,7 @@ setup(
     url='https://github.com/haricot/djangocms-bs4forcascade',
     packages=find_packages(exclude=['examples', 'docs', 'tests']),
     install_requires=[
-        'djangocms-cascade>=0.15.3'
+        'djangocms-cascade>=0.16'
     ],
     license='LICENSE-MIT',
     platforms=['OS Independent'],
