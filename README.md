@@ -1,8 +1,8 @@
 djangocms-bs4forcascade     
 ================================================================================================================================
-djangocms-bs4forcascade is very similar to [jrief/djangocms-cascade](https://github.com/jrief/djangocms-cascade/), the code has been adapted for bootstrap 4,
+djangocms-bs4forcascade is very similar to [jrief/djangocms-cascade](https://github.com/jrief/djangocms-cascade/), the code has been adapted for bootstrap 4 and needs djangocms-cascade.
 
-Currently with bootstrap v4.1.1
+Currently with bootstrap v4.1.1 
 
 Some templates and templatetags to be used with djangoCMS and Bootstrap4 with plugins for [jrief/djangocms-cascade](https://github.com/jrief/djangocms-cascade/).
 
@@ -32,3 +32,6 @@ $ ./manage.py runserver
 ## CHANGELOG
 
 - 0.16_bs4 Update release.
+
+## TODO 
+rehabilitated the tests
