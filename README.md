@@ -4,7 +4,7 @@ djangocms-bs4forcascade is very similar to [jrief/djangocms-cascade](https://git
 
 Currently with bootstrap v4.1.1
 
-Some templates and templatetags to be used with djangoCMS and Bootstrap4 with plugins for djangocms-casacde.
+Some templates and templatetags to be used with djangoCMS and Bootstrap4 with plugins for [jrief/djangocms-cascade](https://github.com/jrief/djangocms-cascade/).
 
 
 
