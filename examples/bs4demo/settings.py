@@ -239,8 +239,8 @@ CMS_PLACEHOLDER_CONF = {
     # this placeholder is used in templates/main.html, it shows how to
     # scaffold a djangoCMS page starting with an empty placeholder
     'Main Content': {
-        'plugins': ['BootstrapContainerPlugin', 'BootstrapJumbotronPlugin'],
-        'parent_classes': {'BootstrapContainerPlugin': None, 'BootstrapJumbotronPlugin': None},
+        'plugins': ['Bootstrap4ContainerPlugin', 'BootstrapJumbotronPlugin'],
+        'parent_classes': {'Bootstrap4ContainerPlugin': None, 'BootstrapJumbotronPlugin': None},
         'glossary': CASCADE_WORKAREA_GLOSSARY,
     },
     # this placeholder is used in templates/wrapped.html, it shows how to
