@@ -1,7 +1,7 @@
 {
-  "name": "djangocms-cascade",
-  "version": "0.10.0",
-  "description": "DjangoCMS-Cascade is the Swiss army knife for working with Django CMS plugins",
+  "name": "djangocms-bs4forcascade",
+  "version": "0.10.1",
+  "description": "Djangocms bs4forcascade (bootstrap4) work with DjangoCMS-Cascade is the Swiss army knife for working with Django CMS plugins",
   "directories": {
     "doc": "docs",
     "example": "examples",
@@ -11,7 +11,7 @@
     "angular": "^1.5.11",
     "angular-animate": "^1.5.11",
     "angular-sanitize": "^1.5.11",
-    "angular-ui-bootstrap": "^0.14.3",
+    "ui-bootstrap4": "^3.0.3",
     "bootstrap": "^4.1.1",
     "jquery": "^3.2.1",
     "leaflet": "^1.2.0",

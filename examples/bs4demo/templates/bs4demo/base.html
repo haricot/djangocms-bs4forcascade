@@ -1,5 +1,4 @@
 {% load static cms_tags sekizai_tags %}
-
 <!doctype html>
 <html lang="de">
 
@@ -41,10 +40,17 @@
 	{% if DJANGO_CLIENT_FRAMEWORK == 'angular-ui' %}
 	<script src="{% static 'node_modules/angular/angular.min.js' %}" type="text/javascript"></script>
 	<script src="{% static 'node_modules/angular-animate/angular-animate.min.js' %}" type="text/javascript"></script>
-	<script src="{% static 'node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.min.js' %}" type="text/javascript"></script>
+	<script src="{% static 'node_modules/ui-bootstrap4/dist/ui-bootstrap-tpls.js' %}" type="text/javascript"></script>
 	<script type="text/javascript">
-	angular.module('cascadeDemo', ['ngAnimate', 'ui.bootstrap']);
+	angular.module('cascadeDemo', ['ngAnimate', 'ui.bootstrap'])
+		.controller('CollapseNavbarCtrl', function ($scope) {
+		$scope.isNavCollapsed = true;
+		$scope.isCollapsed = false;
+		})
 	</script>
+	<style>
+	.nav, .pagination, .carousel, .card-title a { cursor: pointer; }
+	</style>
 	{% else %}
 	<script src="{% static 'node_modules/jquery/dist/jquery.min.js' %}" type="text/javascript"></script>
 	<script src="{% static 'node_modules/popper.js/dist/umd/popper.js' %}" type="text/javascript"></script>
