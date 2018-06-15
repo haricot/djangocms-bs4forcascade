@@ -224,15 +224,16 @@ CMSPLUGIN_CASCADE = {
 }
 
 CASCADE_WORKAREA_GLOSSARY = {
-    'breakpoints': ['xs', 'sm', 'md', 'lg'],
-    'container_max_widths': {'xs': 750, 'sm': 750, 'md': 970, 'lg': 1170},
+    'breakpoints': ['xs', 'sm', 'md', 'lg','xl'],
+    'container_max_widths': {'xs': 576,'sm': 767,'md': 991, 'lg': 1199, 'xl': 1980,},
     'fluid': False,
     'media_queries': {
-        'xs': ['(max-width: 768px)'],
-        'sm': ['(min-width: 768px)', '(max-width: 992px)'],
-        'md': ['(min-width: 992px)', '(max-width: 1200px)'],
-        'lg': ['(min-width: 1200px)'],
-    },
+        'xs': ['(max-width: 576px)'],
+        'sm': ['(min-width: 576px)', '(max-width: 767px)'],
+        'md': ['(min-width: 768px)', '(max-width: 991px)'],
+        'lg': ['(min-width: 992px)', '(max-width: 1199px)'],
+        'xl': ['(min-width: 1200px)'],
+        },
 }
 
 CMS_PLACEHOLDER_CONF = {
