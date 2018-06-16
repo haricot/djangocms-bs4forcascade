@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="navbar-header">
 			{% block navbar-header %}
-				<button type="button" class="navbar-toggler" ng-click="isNavbarCollapsed = !isNavbarCollapsed" aria-expanded="false" aria-label="Toggle navigation" >
+				<button type="button" class="navbar-toggler" ng-init="isNavbarCollapsed = true" ng-click="isNavbarCollapsed = !isNavbarCollapsed" aria-expanded="false" aria-label="Toggle navigation" >
 					<span class="sr-only">{% trans "Toggle navigation" %}</span>
 					<span class="navbar-toggler-icon"></span>
 				</button>
