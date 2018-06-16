@@ -1,20 +1,17 @@
 {% load bootstrap_tags i18n %}
-	<nav class="navbar {{ navbar_classes }}">
-	{% block navbar %}
-		<div class="container">
-			<div class="navbar-header">
-			{% block navbar-header %}
-				<button type="button" class="navbar-toggler" ng-init="isNavbarCollapsed = true" ng-click="isNavbarCollapsed = !isNavbarCollapsed" aria-expanded="false" aria-label="Toggle navigation" >
-					<span class="sr-only">{% trans "Toggle navigation" %}</span>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-			{% endblock %}
-			</div>
-			<div class="collapse navbar-collapse" uib-collapse="isNavbarCollapsed">
-				{% block navbar-nav %}
-				<ul class="navbar-nav mr-auto">{% main_menu "bootstrap/menu/ng-navbar.html" %}</ul>
-				{% endblock %}
-			</div>
-		</div>
-	{% endblock navbar %}
-	</nav> 
+<nav class="navbar navbar-expand-md {{ navbar_classes }}" role="navigation">
+{% block navbar %}
+	<a class="navbar-brand" href="#"></a>
+	{% block navbar-header %}
+	<button type="button" class="navbar-toggler" ng-init="isNavbarCollapsed = true" ng-click="isNavbarCollapsed = !isNavbarCollapsed" aria-label="Toggle navigation">
+	<span class="sr-only">{% trans "Toggle navigation" %}</span>
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	{% endblock %}
+	<div class="collapse navbar-collapse" uib-collapse="isNavbarCollapsed">
+		{% block navbar-nav %}
+		<ul class="navbar-nav">{% main_menu "bootstrap/menu/ng-navbar.html" %}</ul>
+		{% endblock %}
+	</div>
+{% endblock navbar %}
+</nav>
