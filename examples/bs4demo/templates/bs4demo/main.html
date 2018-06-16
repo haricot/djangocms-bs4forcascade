@@ -7,9 +7,7 @@
 
 {% block header %}
 	{% if DJANGO_CLIENT_FRAMEWORK == 'angular-ui' %}
-		<div ng-controller="CollapseNavbarCtrl">
 		{% include "bootstrap/includes/ng-nav-navbar.html" with navbar_classes="navbar-expand-lg navbar-light bg-light fixed-top" %}
-		</div>
  	{% else %}
 		{% include "bootstrap/includes/nav-navbar.html" with navbar_classes="navbar-expand-lg navbar-light bg-light fixed-top" role="navigation" %}
 {% endif %}
