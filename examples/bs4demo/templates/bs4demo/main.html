@@ -12,7 +12,7 @@
 		{% include "bootstrap/includes/nav-navbar.html" with navbar_classes="navbar-expand-lg navbar-light bg-light fixed-top" role="navigation" %}
 {% endif %}
 
-{% if cms_version >= "3.5.0" and request.toolbar and request.toolbar.edit_mode %}
+{% if cms_version >= "3.5.0" and request.toolbar %}
 	<style>
 	body { padding-top:46px; }
 	.fixed-top {  top: 46px !important;}
