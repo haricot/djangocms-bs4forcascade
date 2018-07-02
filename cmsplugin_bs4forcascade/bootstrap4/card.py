@@ -25,9 +25,14 @@ class CardTypeWidget(widgets.RadioSelect):
     """
     Render sample buttons in different colors in the button's backend editor.
     """
-    CARD_TYPES = OrderedDict((('card-default', _("Default")), ('card-primary', _("Primary")),
-        ('card-success', _("Success")), ('card-info', _("Info")), ('card-warning', _("Warning")),
-        ('card-danger', _("Danger")),))
+    CARD_TYPES = OrderedDict((
+        ('card-default', _("Default")), ('bg-primary', _("Primary")),('bg-success',("Success")),
+        ('bg-info', _("Info")), ('bg-warning', _("Warning")),('bg-danger', _("Danger")),('bg-light', _("Light")),
+        ('bg-dark', _("Dark")),
+        ('border-primary', _("Border Primary")),('border-success',("Border Success")),
+        ('border-info', _("Info")), ('border-warning', _("Border Warning")),('border-danger', _("Border Danger")),
+        ('border-ligth', _("Border light")),('border-dark', _("Border Drak")),
+        ))
     template_name = 'cascade/forms/widgets/card_types.html'
 
     @classmethod
@@ -44,7 +49,7 @@ class CardTypeWidget(widgets.RadioSelect):
             format_html_join('\n', '<div class="field-box"><div class="card {1}">'
                 '<div class="card-header">{2}</div><div class="card-body">{3}</div>'
                 '</div><div class="label">{0}</div></div>',
-                ((force_text(w), w.choice_value, force_text(self.PANEL_TYPES[w.choice_value]), _("Content"))
+                ((force_text(w), w.choice_value, force_text(self.CARD_TYPES[w.choice_value]), _("Content"))
                  for w in renderer)
             ))
 
@@ -62,7 +67,7 @@ class BootstrapCardPlugin(TransparentContainer, BootstrapPluginBase):
     render_template = 'cascade/bootstrap4/card.html'
     glossary_field_order = ('card_type', 'heading_size', 'heading', 'footer')
 
-    panel_type = GlossaryField(
+    card_type = GlossaryField(
         CardTypeWidget.get_instance(),
         label=_("Card type"),
         help_text=_("Display Card using this style.")
@@ -87,7 +92,7 @@ class BootstrapCardPlugin(TransparentContainer, BootstrapPluginBase):
     html_parser = HTMLParser()
 
     class Media:
-        css = {'all': ('cascade-bs4/css/admin/bootstrap.min.css', 'cascade-bs4/css/admin/bootstrap-theme.min.css',)}
+        css = {'all': ('cascade-bs4/css/admin/bootstrap.min.css',)}
 
     @classmethod
     def get_identifier(cls, obj):
