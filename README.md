@@ -1,3 +1,7 @@
+##### This repository is obsolete. 
+Now use djangocms-cascade, which uses all the potential of Bootstrap 4 columns and responsive image generation.
+
+
 djangocms-bs4forcascade     
 ================================================================================================================================
 djangocms-bs4forcascade is very similar to [jrief/djangocms-cascade](https://github.com/jrief/djangocms-cascade/), the code has been adapted for bootstrap 4 and needs djangocms-cascade.
