@@ -1,4 +1,4 @@
-##### This repository is obsolete. 
+#### This repository is obsolete. 
 Now use djangocms-cascade, which uses all the potential of Bootstrap 4 columns and responsive image generation.
 
 
